@@ -1,0 +1,811 @@
+{
+  "sourceArchive": "Siam Lounge.zip",
+  "processing": "WebP; auto-orient; contain resize to 640/960/1600px longest edge, no enlargement, no crop, quality 84/88, no retouching.",
+  "images": [
+    {
+      "id": "central-food-presentation",
+      "category": "food",
+      "original": "682645997_1492044518924659_33245594063865609_n.jpg",
+      "archivePath": "Siam Lounge/682645997_1492044518924659_33245594063865609_n.jpg",
+      "originalWidth": 2048,
+      "originalHeight": 1574,
+      "originalBytes": 358481,
+      "originalSha256": "f12ed4674e5133a9f3c07480a99737c7bc7ecb87f2fafe4a2be0c7ac66de99b8",
+      "featured": [
+        "Central-Hauptbereich"
+      ],
+      "alt": {
+        "en": "A team member holding a plate of food in front of the gold Siam Lounge emblem at Central.",
+        "de": "Eine Mitarbeiterin mit einem angerichteten Teller vor dem goldenen Siam-Lounge-Emblem in Central.",
+        "th": "พนักงานถือจานอาหารหน้าโลโก้สีทองของ Siam Lounge สาขาพัทยากลาง"
+      },
+      "variants": [
+        {
+          "file": "assets/images/central-food-presentation-640.webp",
+          "width": 640,
+          "height": 492,
+          "bytes": 42804
+        },
+        {
+          "file": "assets/images/central-food-presentation-960.webp",
+          "width": 960,
+          "height": 738,
+          "bytes": 117492
+        },
+        {
+          "file": "assets/images/central-food-presentation-1600.webp",
+          "width": 1600,
+          "height": 1230,
+          "bytes": 283684
+        }
+      ]
+    },
+    {
+      "id": "pratumnak-dining-bar",
+      "category": "pratumnak",
+      "original": "508419567_122120706686855362_6880964901028639095_n.jpg",
+      "archivePath": "Siam Lounge/508419567_122120706686855362_6880964901028639095_n.jpg",
+      "originalWidth": 2048,
+      "originalHeight": 1536,
+      "originalBytes": 299181,
+      "originalSha256": "752a1863d278f269f2fc7c2a985918b2d3d7f61ca3d5768323ca2d021572bced",
+      "featured": [
+        "Pratumnak-Hauptbereich"
+      ],
+      "alt": {
+        "en": "Wooden dining tables, white chairs and an illuminated bar at Siam Lounge Pratumnak.",
+        "de": "Holztische, weiße Stühle und eine beleuchtete Bar in Siam Lounge Pratumnak.",
+        "th": "โต๊ะอาหารไม้ เก้าอี้สีขาว และบาร์ที่มีแสงไฟใน Siam Lounge สาขาพระตำหนัก"
+      },
+      "variants": [
+        {
+          "file": "assets/images/pratumnak-dining-bar-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 46282
+        },
+        {
+          "file": "assets/images/pratumnak-dining-bar-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 108094
+        },
+        {
+          "file": "assets/images/pratumnak-dining-bar-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 233004
+        }
+      ]
+    },
+    {
+      "id": "stay-room-garden-view",
+      "category": "stay",
+      "original": "585720624_122159751332855362_8912321289492350535_n.jpg",
+      "archivePath": "Siam Lounge/585720624_122159751332855362_8912321289492350535_n.jpg",
+      "originalWidth": 2048,
+      "originalHeight": 1536,
+      "originalBytes": 174470,
+      "originalSha256": "476371b01237fbfcc1b78401cceaafdbdeb004ee176940c1fab5ff52200a08cb",
+      "featured": [
+        "Unterkunft: Zimmerblick"
+      ],
+      "alt": {
+        "en": "A bed with folded towels, a mirror and a view of greenery through the open doorway.",
+        "de": "Ein Bett mit gefalteten Handtüchern, ein Spiegel und der Blick durch die offene Tür ins Grüne.",
+        "th": "เตียงพร้อมผ้าขนหนูพับ กระจก และวิวต้นไม้ผ่านประตูที่เปิดอยู่"
+      },
+      "variants": [
+        {
+          "file": "assets/images/stay-room-garden-view-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 31360
+        },
+        {
+          "file": "assets/images/stay-room-garden-view-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 79994
+        },
+        {
+          "file": "assets/images/stay-room-garden-view-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 166114
+        }
+      ]
+    },
+    {
+      "id": "central-team",
+      "category": "central",
+      "original": "710756008_1521457442650033_3614403522750592165_n.jpg",
+      "archivePath": "Siam Lounge/710756008_1521457442650033_3614403522750592165_n.jpg",
+      "originalWidth": 2048,
+      "originalHeight": 1536,
+      "originalBytes": 468673,
+      "originalSha256": "e79484f1849be832b562e21ba08042a7f454cc7620fbf9eea01b14174f278a16",
+      "featured": [
+        "Entdecken: Central"
+      ],
+      "alt": {
+        "en": "The Siam Lounge team standing together beneath the gold emblem at Central.",
+        "de": "Das Siam-Lounge-Team gemeinsam vor dem goldenen Emblem am Standort Central.",
+        "th": "ทีมงาน Siam Lounge ยืนร่วมกันใต้โลโก้สีทองที่สาขาพัทยากลาง"
+      },
+      "variants": [
+        {
+          "file": "assets/images/central-team-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 54896
+        },
+        {
+          "file": "assets/images/central-team-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 144478
+        },
+        {
+          "file": "assets/images/central-team-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 375432
+        }
+      ]
+    },
+    {
+      "id": "pratumnak-exterior-night",
+      "category": "pratumnak",
+      "original": "538002191_122141107364855362_4129767670075666258_n.jpg",
+      "archivePath": "Siam Lounge/538002191_122141107364855362_4129767670075666258_n.jpg",
+      "originalWidth": 2048,
+      "originalHeight": 1536,
+      "originalBytes": 204829,
+      "originalSha256": "91ad42a4bad605be76f595d147d9110838f98de6c804f48334e745e2f0e02675",
+      "featured": [
+        "Entdecken: Pratumnak"
+      ],
+      "alt": {
+        "en": "Siam Lounge Pratumnak at night, with illuminated palms and the covered restaurant terrace.",
+        "de": "Siam Lounge Pratumnak bei Nacht mit beleuchteten Palmen und überdachter Restaurantterrasse.",
+        "th": "Siam Lounge สาขาพระตำหนักยามค่ำคืน พร้อมต้นปาล์มประดับไฟและลานร้านอาหารใต้หลังคา"
+      },
+      "variants": [
+        {
+          "file": "assets/images/pratumnak-exterior-night-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 43060
+        },
+        {
+          "file": "assets/images/pratumnak-exterior-night-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 104780
+        },
+        {
+          "file": "assets/images/pratumnak-exterior-night-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 222872
+        }
+      ]
+    },
+    {
+      "id": "stay-living-area",
+      "category": "stay",
+      "original": "585900792_122159750234855362_4154240762212150057_n.jpg",
+      "archivePath": "Siam Lounge/585900792_122159750234855362_4154240762212150057_n.jpg",
+      "originalWidth": 2048,
+      "originalHeight": 1536,
+      "originalBytes": 115649,
+      "originalSha256": "3cc827985a61e116fbb20fcc2afb02d232fe5a66a18f6bc097363b60b6619380",
+      "featured": [
+        "Unterkunft: Wohnbereich"
+      ],
+      "alt": {
+        "en": "A seating area with a sofa, wall-mounted television and wooden counter, looking toward the bed.",
+        "de": "Sitzbereich mit Sofa, Wandfernseher und Holzablage mit Blick zum Bett.",
+        "th": "มุมนั่งเล่นพร้อมโซฟา โทรทัศน์ติดผนัง และเคาน์เตอร์ไม้ มองไปทางเตียง"
+      },
+      "variants": [
+        {
+          "file": "assets/images/stay-living-area-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 18184
+        },
+        {
+          "file": "assets/images/stay-living-area-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 45120
+        },
+        {
+          "file": "assets/images/stay-living-area-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 103054
+        }
+      ]
+    },
+    {
+      "id": "central-gathering",
+      "category": "events",
+      "original": "533671544_1288541295941650_3741726529062987623_n.jpg",
+      "archivePath": "Siam Lounge/533671544_1288541295941650_3741726529062987623_n.jpg",
+      "originalWidth": 2048,
+      "originalHeight": 1536,
+      "originalBytes": 502521,
+      "originalSha256": "6cef12ccb285076fed0dc25ba30764d5d30b028809a60e942270b9ac2ef1da4d",
+      "featured": [],
+      "alt": {
+        "en": "A group gathered around dining tables beneath warm lights at Siam Lounge Central.",
+        "de": "Eine Gruppe an gedeckten Tischen unter warmen Lichtern in Siam Lounge Central.",
+        "th": "กลุ่มผู้คนรอบโต๊ะอาหารใต้แสงไฟโทนอุ่นที่ Siam Lounge สาขาพัทยากลาง"
+      },
+      "variants": [
+        {
+          "file": "assets/images/central-gathering-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 78682
+        },
+        {
+          "file": "assets/images/central-gathering-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 186464
+        },
+        {
+          "file": "assets/images/central-gathering-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 409356
+        }
+      ]
+    },
+    {
+      "id": "pratumnak-terrace-tables",
+      "category": "pratumnak",
+      "original": "496946855_1217325376396576_1336596014063228049_n.jpg",
+      "archivePath": "Siam Lounge/496946855_1217325376396576_1336596014063228049_n.jpg",
+      "originalWidth": 2048,
+      "originalHeight": 1536,
+      "originalBytes": 295534,
+      "originalSha256": "0f6a6dabdf607041316aefa9ad481abd3bbec8c2c38193453d820a3db12c9793",
+      "featured": [],
+      "alt": {
+        "en": "Wooden tables and outdoor seating beside the white bar at Pratumnak.",
+        "de": "Holztische und Sitzplätze im offenen Bereich neben der weißen Bar in Pratumnak.",
+        "th": "โต๊ะไม้และที่นั่งในพื้นที่เปิดข้างบาร์สีขาวที่สาขาพระตำหนัก"
+      },
+      "variants": [
+        {
+          "file": "assets/images/pratumnak-terrace-tables-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 36066
+        },
+        {
+          "file": "assets/images/pratumnak-terrace-tables-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 91614
+        },
+        {
+          "file": "assets/images/pratumnak-terrace-tables-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 202622
+        }
+      ]
+    },
+    {
+      "id": "stay-bathroom",
+      "category": "stay",
+      "original": "585383189_122159751440855362_7168622648143244493_n.jpg",
+      "archivePath": "Siam Lounge/585383189_122159751440855362_7168622648143244493_n.jpg",
+      "originalWidth": 1536,
+      "originalHeight": 2048,
+      "originalBytes": 133105,
+      "originalSha256": "5ad7029f6c6a6fc14eb8e556849015e0899ab510e6b6252a07fc3770753fb2bc",
+      "featured": [
+        "Unterkunft: Badezimmer"
+      ],
+      "alt": {
+        "en": "A tiled bathroom with a glass shower screen, toilet and washbasin.",
+        "de": "Gefliestes Badezimmer mit Glasabtrennung an der Dusche, WC und Waschbecken.",
+        "th": "ห้องน้ำปูกระเบื้องพร้อมฉากกั้นอาบน้ำกระจก โถสุขภัณฑ์ และอ่างล้างหน้า"
+      },
+      "variants": [
+        {
+          "file": "assets/images/stay-bathroom-640.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 21428
+        },
+        {
+          "file": "assets/images/stay-bathroom-960.webp",
+          "width": 720,
+          "height": 960,
+          "bytes": 58202
+        },
+        {
+          "file": "assets/images/stay-bathroom-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 135808
+        }
+      ]
+    },
+    {
+      "id": "pratumnak-pool-table",
+      "category": "pratumnak",
+      "original": "558696913_122150971250855362_3854214772635520515_n.jpg",
+      "archivePath": "Siam Lounge/558696913_122150971250855362_3854214772635520515_n.jpg",
+      "originalWidth": 2048,
+      "originalHeight": 1536,
+      "originalBytes": 353760,
+      "originalSha256": "68cac627f2adb37b966440a475418d249ad20d6eafd028486bea560ae031fd1d",
+      "featured": [],
+      "alt": {
+        "en": "A pool table with racked balls and a player, with the restaurant seating beyond.",
+        "de": "Billardtisch mit aufgebauten Kugeln und einem Spieler, dahinter die Sitzplätze des Restaurants.",
+        "th": "โต๊ะพูลพร้อมลูกที่จัดไว้และผู้เล่น โดยมีที่นั่งร้านอาหารอยู่ด้านหลัง"
+      },
+      "variants": [
+        {
+          "file": "assets/images/pratumnak-pool-table-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 53200
+        },
+        {
+          "file": "assets/images/pratumnak-pool-table-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 124786
+        },
+        {
+          "file": "assets/images/pratumnak-pool-table-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 267818
+        }
+      ]
+    },
+    {
+      "id": "stay-window-detail",
+      "category": "stay",
+      "original": "586252328_122159750228855362_3255003130855897768_n.jpg",
+      "archivePath": "Siam Lounge/586252328_122159750228855362_3255003130855897768_n.jpg",
+      "originalWidth": 2048,
+      "originalHeight": 1536,
+      "originalBytes": 162458,
+      "originalSha256": "e3eecc20d9c1fe9e5a41fe305c94ebe36761756f141814d6ceda3039c609bfbd",
+      "featured": [],
+      "alt": {
+        "en": "A wooden counter with glasses and a plant beside a window overlooking greenery.",
+        "de": "Holzablage mit Gläsern und einer Pflanze am Fenster mit Blick ins Grüne.",
+        "th": "เคาน์เตอร์ไม้พร้อมแก้วและต้นไม้ข้างหน้าต่างที่มองออกไปเห็นพื้นที่สีเขียว"
+      },
+      "variants": [
+        {
+          "file": "assets/images/stay-window-detail-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 31094
+        },
+        {
+          "file": "assets/images/stay-window-detail-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 64882
+        },
+        {
+          "file": "assets/images/stay-window-detail-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 125980
+        }
+      ]
+    },
+    {
+      "id": "pratumnak-guests-terrace",
+      "category": "events",
+      "original": "556882751_122150414978855362_2355177145950919316_n.jpg",
+      "archivePath": "Siam Lounge/556882751_122150414978855362_2355177145950919316_n.jpg",
+      "originalWidth": 2048,
+      "originalHeight": 1536,
+      "originalBytes": 414021,
+      "originalSha256": "81689ca89994fc44157826c05b7619c8dc7888726576c882a027b80ee74723aa",
+      "featured": [],
+      "alt": {
+        "en": "Guests seated at tables beneath the illuminated terrace roof at Pratumnak.",
+        "de": "Gäste an Tischen unter dem beleuchteten Terrassendach in Pratumnak.",
+        "th": "แขกนั่งที่โต๊ะใต้หลังคาลานร้านอาหารที่ประดับไฟในสาขาพระตำหนัก"
+      },
+      "variants": [
+        {
+          "file": "assets/images/pratumnak-guests-terrace-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 90822
+        },
+        {
+          "file": "assets/images/pratumnak-guests-terrace-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 220200
+        },
+        {
+          "file": "assets/images/pratumnak-guests-terrace-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 492358
+        }
+      ]
+    },
+    {
+      "id": "stay-courtyard",
+      "category": "stay",
+      "original": "585898601_122159751452855362_6723013554608298943_n.jpg",
+      "archivePath": "Siam Lounge/585898601_122159751452855362_6723013554608298943_n.jpg",
+      "originalWidth": 2048,
+      "originalHeight": 1536,
+      "originalBytes": 795059,
+      "originalSha256": "9dd1ff8ba4987455fadd29899dae799fffb540d94226e04ac2b871518ecdfc51",
+      "featured": [
+        "Entdecken: Übernachten"
+      ],
+      "alt": {
+        "en": "An overhead view of an outdoor seating area with tables, chairs and tropical plants.",
+        "de": "Blick von oben auf einen Außenbereich mit Tischen, Stühlen und tropischen Pflanzen.",
+        "th": "มุมมองจากด้านบนของพื้นที่นั่งเล่นกลางแจ้งพร้อมโต๊ะ เก้าอี้ และต้นไม้เขตร้อน"
+      },
+      "variants": [
+        {
+          "file": "assets/images/stay-courtyard-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 107988
+        },
+        {
+          "file": "assets/images/stay-courtyard-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 278612
+        },
+        {
+          "file": "assets/images/stay-courtyard-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 689448
+        }
+      ]
+    },
+    {
+      "id": "pratumnak-table-setting",
+      "category": "pratumnak",
+      "original": "506796627_122120707040855362_8282799732458617347_n.jpg",
+      "archivePath": "Siam Lounge/506796627_122120707040855362_8282799732458617347_n.jpg",
+      "originalWidth": 2048,
+      "originalHeight": 1536,
+      "originalBytes": 325403,
+      "originalSha256": "4e2b656f62c6e2da350c9840770ed9b3b061d3834ce6f615e81399551027a0e9",
+      "featured": [],
+      "alt": {
+        "en": "A wooden dining table set with white placemats, surrounded by white chairs at Pratumnak.",
+        "de": "Holztisch mit weißen Platzsets und weißen Stühlen in Pratumnak.",
+        "th": "โต๊ะอาหารไม้พร้อมแผ่นรองจานสีขาวและเก้าอี้สีขาวที่สาขาพระตำหนัก"
+      },
+      "variants": [
+        {
+          "file": "assets/images/pratumnak-table-setting-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 52730
+        },
+        {
+          "file": "assets/images/pratumnak-table-setting-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 120594
+        },
+        {
+          "file": "assets/images/pratumnak-table-setting-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 261272
+        }
+      ]
+    },
+    {
+      "id": "stay-bed-detail",
+      "category": "stay",
+      "original": "585886575_122159751284855362_236128605701771017_n.jpg",
+      "archivePath": "Siam Lounge/585886575_122159751284855362_236128605701771017_n.jpg",
+      "originalWidth": 2048,
+      "originalHeight": 1536,
+      "originalBytes": 111639,
+      "originalSha256": "8a325101fba4ad46345e07fe1db6c316e4b0dc40153bea3177370870e7c2e7ec",
+      "featured": [],
+      "alt": {
+        "en": "Rolled towels on a neatly made bed with white pillows and linen.",
+        "de": "Gerollte Handtücher auf einem gemachten Bett mit weißen Kissen und weißer Bettwäsche.",
+        "th": "ผ้าขนหนูม้วนบนเตียงที่จัดเรียบร้อยพร้อมหมอนและผ้าปูสีขาว"
+      },
+      "variants": [
+        {
+          "file": "assets/images/stay-bed-detail-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 16170
+        },
+        {
+          "file": "assets/images/stay-bed-detail-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 38462
+        },
+        {
+          "file": "assets/images/stay-bed-detail-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 77922
+        }
+      ]
+    },
+    {
+      "id": "stay-room-amenities",
+      "category": "stay",
+      "original": "584575912_122159750174855362_7624221216844308563_n.jpg",
+      "archivePath": "Siam Lounge/584575912_122159750174855362_7624221216844308563_n.jpg",
+      "originalWidth": 1536,
+      "originalHeight": 2048,
+      "originalBytes": 121708,
+      "originalSha256": "1612c0011b12fe1bd1e901ffc7af81fb8a992d7552c13725cf38f8463fbb8633",
+      "featured": [],
+      "alt": {
+        "en": "A refrigerator, kettle and open wardrobe beside a sofa in the accommodation.",
+        "de": "Kühlschrank, Wasserkocher und offener Kleiderschrank neben einem Sofa in der Unterkunft.",
+        "th": "ตู้เย็น กาต้มน้ำ และตู้เสื้อผ้าแบบเปิดข้างโซฟาในที่พัก"
+      },
+      "variants": [
+        {
+          "file": "assets/images/stay-room-amenities-640.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 17292
+        },
+        {
+          "file": "assets/images/stay-room-amenities-960.webp",
+          "width": 720,
+          "height": 960,
+          "bytes": 44682
+        },
+        {
+          "file": "assets/images/stay-room-amenities-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 101626
+        }
+      ]
+    },
+    {
+      "id": "pratumnak-evening-dining",
+      "category": "pratumnak",
+      "original": "506675243_122120706710855362_8860957388607888142_n.jpg",
+      "archivePath": "Siam Lounge/506675243_122120706710855362_8860957388607888142_n.jpg",
+      "originalWidth": 2048,
+      "originalHeight": 1536,
+      "originalBytes": 375572,
+      "originalSha256": "bdc3876124eebeab9923129c5f0bd5176726460cb7f68160830764daa5a64ec9",
+      "featured": [],
+      "alt": {
+        "en": "Warmly lit dining tables and the bar inside Siam Lounge Pratumnak in the evening.",
+        "de": "Warm beleuchtete Esstische und die Bar im Innenbereich von Siam Lounge Pratumnak am Abend.",
+        "th": "โต๊ะอาหารและบาร์ภายใน Siam Lounge สาขาพระตำหนักใต้แสงไฟโทนอุ่นในช่วงเย็น"
+      },
+      "variants": [
+        {
+          "file": "assets/images/pratumnak-evening-dining-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 51774
+        },
+        {
+          "file": "assets/images/pratumnak-evening-dining-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 129942
+        },
+        {
+          "file": "assets/images/pratumnak-evening-dining-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 309102
+        }
+      ]
+    }
+  ],
+  "unused": [
+    {
+      "original": "321989254_529337922485154_5246296334855059974_n.jpg",
+      "group": "branding",
+      "reason": "JPG mit festem Hintergrund, Rand oder Kleinschrift; Textlogo bis zum transparenten Original behalten."
+    },
+    {
+      "original": "476361896_8400298233404978_6082872404815159922_n.jpg",
+      "group": "branding",
+      "reason": "JPG mit festem Hintergrund, Rand oder Kleinschrift; Textlogo bis zum transparenten Original behalten."
+    },
+    {
+      "original": "496946585_1217325426396571_2016823574452449093_n.jpg",
+      "group": "pratumnak",
+      "reason": "Redundante Raumansicht oder weniger geeignetes Billardmotiv."
+    },
+    {
+      "original": "498574655_1217325409729906_7207276338157065555_n.jpg",
+      "group": "pratumnak",
+      "reason": "Redundante Raumansicht oder weniger geeignetes Billardmotiv."
+    },
+    {
+      "original": "499623697_122112538178855362_9089055845248978403_n.jpg",
+      "group": "branding",
+      "reason": "JPG mit festem Hintergrund, Rand oder Kleinschrift; Textlogo bis zum transparenten Original behalten."
+    },
+    {
+      "original": "534413722_1288540889275024_8535241013177897366_n.jpg",
+      "group": "central",
+      "reason": "Ähnliches Gruppenmotiv oder engerer/ungünstigerer Bildausschnitt."
+    },
+    {
+      "original": "555964081_1323798115749301_3936299276578213715_n.jpg",
+      "group": "branding",
+      "reason": "JPG mit festem Hintergrund, Rand oder Kleinschrift; Textlogo bis zum transparenten Original behalten."
+    },
+    {
+      "original": "557622650_122150414738855362_2390219152236732849_n.jpg",
+      "group": "pratumnak",
+      "reason": "Redundante Raumansicht oder weniger geeignetes Billardmotiv."
+    },
+    {
+      "original": "583319008_122159750846855362_1103379561286774752_n.jpg",
+      "group": "stay",
+      "reason": "Ähnliche Detailansicht oder schrägerer Ausschnitt; repräsentative Alternativen ausgewählt."
+    },
+    {
+      "original": "585903952_122159751296855362_8133653397822699279_n.jpg",
+      "group": "stay",
+      "reason": "Ähnliche Detailansicht oder schrägerer Ausschnitt; repräsentative Alternativen ausgewählt."
+    },
+    {
+      "original": "586301583_122159751338855362_6936301178119675473_n.jpg",
+      "group": "stay",
+      "reason": "Ähnliche Detailansicht oder schrägerer Ausschnitt; repräsentative Alternativen ausgewählt."
+    },
+    {
+      "original": "587008515_122159750204855362_6131141444078838913_n.jpg",
+      "group": "stay",
+      "reason": "Ähnliche Detailansicht oder schrägerer Ausschnitt; repräsentative Alternativen ausgewählt."
+    },
+    {
+      "original": "607195741_1399127848216327_1605488142472999885_n.jpg",
+      "group": "central",
+      "reason": "Ähnliches Gruppenmotiv oder engerer/ungünstigerer Bildausschnitt."
+    },
+    {
+      "original": "608206196_1399127898216322_5608044747446432116_n.jpg",
+      "group": "central",
+      "reason": "Ähnliches Gruppenmotiv oder engerer/ungünstigerer Bildausschnitt."
+    },
+    {
+      "original": "712358598_1521457499316694_3122335944279736143_n.jpg",
+      "group": "central",
+      "reason": "Ähnliches Gruppenmotiv oder engerer/ungünstigerer Bildausschnitt."
+    },
+    {
+      "original": "715279439_1521457389316705_6267027555083186228_n.jpg",
+      "group": "central",
+      "reason": "Ähnliches Gruppenmotiv oder engerer/ungünstigerer Bildausschnitt."
+    },
+    {
+      "original": "735608468_122189077418855362_9215823673316369024_n.jpg",
+      "group": "branding",
+      "reason": "JPG mit festem Hintergrund, Rand oder Kleinschrift; Textlogo bis zum transparenten Original behalten."
+    },
+    {
+      "original": "739313673_122189379344855362_3875525858376866688_n.jpg",
+      "group": "branding",
+      "reason": "JPG mit festem Hintergrund, Rand oder Kleinschrift; Textlogo bis zum transparenten Original behalten."
+    },
+    {
+      "original": "793091395_122196338012855362_7713687327928860968_n.jpg",
+      "group": "events",
+      "reason": "Turnierwerbung; Termine bzw. Wiederholungen nicht als aktuell bestätigt."
+    },
+    {
+      "original": "826047741_2173002113623911_2563879053537429041_n.jpg",
+      "group": "food",
+      "reason": "Werbegrafik mit Preisen, Aktions- oder Verfügbarkeitsangaben; kein reines Food-Foto."
+    },
+    {
+      "original": "828834195_1633678978345167_4767340546220732124_n.jpg",
+      "group": "food",
+      "reason": "Werbegrafik mit Preisen, Aktions- oder Verfügbarkeitsangaben; kein reines Food-Foto."
+    },
+    {
+      "original": "830197908_968567055603791_9108583880890483680_n.jpg",
+      "group": "food",
+      "reason": "Werbegrafik mit Preisen, Aktions- oder Verfügbarkeitsangaben; kein reines Food-Foto."
+    },
+    {
+      "original": "830633034_2026036368060062_3209565153860366988_n.jpg",
+      "group": "food",
+      "reason": "Werbegrafik mit Preisen, Aktions- oder Verfügbarkeitsangaben; kein reines Food-Foto."
+    },
+    {
+      "original": "831646152_2299509950835541_6556347823604854170_n.jpg",
+      "group": "food",
+      "reason": "Werbegrafik mit Preisen, Aktions- oder Verfügbarkeitsangaben; kein reines Food-Foto."
+    },
+    {
+      "original": "832557669_1809135830398741_7989689867260975164_n.jpg",
+      "group": "food",
+      "reason": "Werbegrafik mit Preisen, Aktions- oder Verfügbarkeitsangaben; kein reines Food-Foto."
+    },
+    {
+      "original": "833363974_1640130884570930_372424079658399004_n.jpg",
+      "group": "food",
+      "reason": "Werbegrafik mit Preisen, Aktions- oder Verfügbarkeitsangaben; kein reines Food-Foto."
+    },
+    {
+      "original": "833977712_1405734831744765_1756635406023040453_n.jpg",
+      "group": "food",
+      "reason": "Werbegrafik mit Preisen, Aktions- oder Verfügbarkeitsangaben; kein reines Food-Foto."
+    },
+    {
+      "original": "834200478_122199960956855362_6374452993122934635_n.jpg",
+      "group": "events",
+      "reason": "Turnierwerbung; Termine bzw. Wiederholungen nicht als aktuell bestätigt."
+    },
+    {
+      "original": "835749582_1101707325595088_1761616658541832766_n.jpg",
+      "group": "food",
+      "reason": "Werbegrafik mit Preisen, Aktions- oder Verfügbarkeitsangaben; kein reines Food-Foto."
+    },
+    {
+      "original": "836118412_1248867050758094_3544537940299694891_n.jpg",
+      "group": "food",
+      "reason": "Werbegrafik mit Preisen, Aktions- oder Verfügbarkeitsangaben; kein reines Food-Foto."
+    },
+    {
+      "original": "836459721_1321317826646859_1845502250668624225_n.jpg",
+      "group": "food",
+      "reason": "Werbegrafik mit Preisen, Aktions- oder Verfügbarkeitsangaben; kein reines Food-Foto."
+    },
+    {
+      "original": "839664161_1224935613309520_4295141096259687966_n.jpg",
+      "group": "food",
+      "reason": "Werbegrafik mit Preisen, Aktions- oder Verfügbarkeitsangaben; kein reines Food-Foto."
+    },
+    {
+      "original": "840349041_939333892240181_541019742658177447_n.jpg",
+      "group": "food",
+      "reason": "Werbegrafik mit Preisen, Aktions- oder Verfügbarkeitsangaben; kein reines Food-Foto."
+    },
+    {
+      "original": "840900833_1784572322751241_3507462479962416290_n.jpg",
+      "group": "food",
+      "reason": "Werbegrafik mit Preisen, Aktions- oder Verfügbarkeitsangaben; kein reines Food-Foto."
+    },
+    {
+      "original": "841208990_29131580839864048_9160734426727750421_n.jpg",
+      "group": "food",
+      "reason": "Werbegrafik mit Preisen, Aktions- oder Verfügbarkeitsangaben; kein reines Food-Foto."
+    }
+  ]
+}

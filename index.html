@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0b">
+  <meta name="description" content="Discover Siam Lounge in Central Pattaya and Pratumnak. Explore our restaurant, bar and lounge locations, and accommodation in Pratumnak.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Siam Lounge Pattaya | Restaurant, Bar &amp; Stay">
+  <meta property="og:description" content="Discover Siam Lounge in Central Pattaya and Pratumnak. Restaurant, bar, lounge and accommodation in Pattaya, Thailand.">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:site_name" content="Siam Lounge Pattaya">
+  <!-- Add canonical, og:url and an absolute og:image URL once the public website address and an approved photo are confirmed. -->
+  <title>Siam Lounge Pattaya | Restaurant, Bar &amp; Stay</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/features.css">
+  <script src="js/translations.js" defer></script>
+  <script src="js/config.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/ui.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/content.js" defer></script>
+  <script src="js/requests.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="header-inner container">
+      <a class="brand" href="#home" aria-label="Siam Lounge Pattaya — home" data-i18n-aria="brand.home">
+        <!-- Original logo is optional: set SIAM_CONFIG.logo in js/config.js. Text remains if empty or unavailable. -->
+        <span class="brand-name">SIAM LOUNGE<span>PATTAYA</span></span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation" data-i18n-aria="nav.label">
+        <div class="nav-group nav-group-left">
+        <a href="#home" data-i18n="nav.home" aria-current="location">Home</a>
+        <a href="#central" data-i18n="nav.central">Central</a>
+        <a href="#pratumnak" data-i18n="nav.pratumnak">Pratumnak</a>
+        <a href="#stay" data-i18n="nav.stay">Stay</a>
+        </div>
+        <div class="nav-group nav-group-right">
+        <a href="#menu" data-i18n="nav.menu">Menu</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="#events" data-i18n="nav.events">Events</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </div>
+      </nav>
+      <div class="header-actions">
+        <div class="language-switch language-picker" hidden>
+          <button class="language-toggle" id="language-toggle" type="button" aria-label="Choose language" data-i18n-aria="language.label" aria-haspopup="menu" aria-expanded="false" aria-controls="language-menu">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg>
+          </button>
+          <div class="language-menu" id="language-menu" role="menu" aria-labelledby="language-toggle" hidden>
+            <button type="button" role="menuitemradio" data-language="en" lang="en" aria-label="English" aria-checked="true" tabindex="-1">EN</button>
+            <button type="button" role="menuitemradio" data-language="de" lang="de" aria-label="Deutsch" aria-checked="false" tabindex="-1">DE</button>
+            <button type="button" role="menuitemradio" data-language="th" lang="th" aria-label="ไทย" aria-checked="false" tabindex="-1">ไทย</button>
+          </div>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation" data-i18n-aria="nav.open" hidden><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-art" role="img" aria-label="Abstract placeholder for a future Siam Lounge photo" data-i18n-aria="photo.hero">
+        <div class="hero-arch" aria-hidden="true"><span class="arch-inner"></span><span class="arch-sun"></span></div>
+        <span class="hero-photo-label"><span class="small-cross" aria-hidden="true">+</span><span data-i18n="photo.placeholder">Photo placeholder</span></span>
+      </div>
+      <div class="container hero-content">
+        <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="hero.location">Pattaya, Thailand</span></p>
+        <h1 id="hero-title">SIAM<br>LOUNGE<span>PATTAYA</span></h1>
+        <p class="hero-tagline" data-i18n="tagline">EAT · DRINK · STAY</p>
+        <p class="hero-description" data-i18n="hero.description">Discover the Siam Lounge experience in Pattaya.</p>
+        <div class="button-row">
+          <a class="button button-gold" href="#contact" data-open-dialog="table-dialog"><span data-i18n="cta.table">Reserve a table</span><span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="#stay" data-open-dialog="stay-dialog"><span data-i18n="cta.stay">Book your stay</span><span aria-hidden="true">↗</span></a>
+        </div>
+        <a class="hero-explore text-link" href="#explore"><span data-i18n="hero.explore">Explore Siam Lounge</span><span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-bottom container">
+        <span data-i18n="hero.bottom">Two locations. One Siam Lounge.</span>
+        <a href="#explore" class="scroll-link"><span data-i18n="hero.scroll">A little further, a little more</span><span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="section explore-section" id="explore" aria-labelledby="explore-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow" data-i18n="explore.eyebrow">Welcome to Siam Lounge</p><h2 id="explore-title" data-i18n="explore.title">Find your kind of moment.</h2></div>
+          <div class="section-intro"><p data-i18n="explore.description">A table in Central. A drink in Pratumnak. A place to stay. Discover our three sides of Pattaya.</p><a class="text-link" href="#events"><span data-i18n="cta.events">View events</span><span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="experience-grid">
+          <article class="experience-card reveal">
+            <img class="venue-photo" src="assets/images/central-team-960.webp" srcset="assets/images/central-team-640.webp 640w, assets/images/central-team-960.webp 960w, assets/images/central-team-1600.webp 1600w" sizes="(max-width: 420px) calc(100vw - 36px), (max-width: 760px) 45vw, (max-width: 1200px) 30vw, 400px" width="1600" height="1200" loading="lazy" decoding="async" alt="The Siam Lounge team standing together beneath the gold emblem at Central." data-i18n-alt="photo.central-team">
+            <div class="experience-copy"><p class="eyebrow" data-i18n="kind.restaurant">Restaurant · Bar · Lounge</p><h3>SIAM LOUNGE<br>CENTRAL</h3><a class="text-link" href="#central"><span data-i18n="action.central">Discover Central</span><span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="experience-card reveal">
+            <img class="venue-photo" src="assets/images/pratumnak-exterior-night-960.webp" srcset="assets/images/pratumnak-exterior-night-640.webp 640w, assets/images/pratumnak-exterior-night-960.webp 960w, assets/images/pratumnak-exterior-night-1600.webp 1600w" sizes="(max-width: 420px) calc(100vw - 36px), (max-width: 760px) 45vw, (max-width: 1200px) 30vw, 400px" width="1600" height="1200" loading="lazy" decoding="async" alt="Siam Lounge Pratumnak at night, with illuminated palms and the covered restaurant terrace." data-i18n-alt="photo.pratumnak-exterior-night">
+            <div class="experience-copy"><p class="eyebrow" data-i18n="kind.restaurant">Restaurant · Bar · Lounge</p><h3>SIAM LOUNGE<br>PRATUMNAK</h3><a class="text-link" href="#pratumnak"><span data-i18n="action.pratumnak">Discover Pratumnak</span><span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="experience-card reveal">
+            <img class="venue-photo" src="assets/images/stay-courtyard-960.webp" srcset="assets/images/stay-courtyard-640.webp 640w, assets/images/stay-courtyard-960.webp 960w, assets/images/stay-courtyard-1600.webp 1600w" sizes="(max-width: 420px) calc(100vw - 36px), (max-width: 760px) 45vw, (max-width: 1200px) 30vw, 400px" width="1600" height="1200" loading="lazy" decoding="async" alt="An overhead view of an outdoor seating area with tables, chairs and tropical plants." data-i18n-alt="photo.stay-courtyard">
+            <div class="experience-copy"><p class="eyebrow" data-i18n="kind.stay">Accommodation in Pratumnak</p><h3 data-i18n="explore.stay">STAY AT SIAM LOUNGE</h3><a class="text-link" href="#stay"><span data-i18n="action.rooms">View Rooms</span><span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section location-section" id="central" aria-labelledby="central-title">
+      <div class="container location-layout">
+        <div class="location-visual reveal"><img class="venue-photo location-photo" src="assets/images/central-food-presentation-960.webp" srcset="assets/images/central-food-presentation-640.webp 640w, assets/images/central-food-presentation-960.webp 960w, assets/images/central-food-presentation-1600.webp 1600w" sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1200px) 45vw, 570px" width="1600" height="1230" loading="lazy" decoding="async" alt="A team member holding a plate of food in front of the gold Siam Lounge emblem at Central." data-i18n-alt="photo.central-food-presentation"><span class="visual-caption" data-i18n="central.caption">In the heart of Pattaya</span></div>
+        <div class="location-copy reveal">
+          <p class="eyebrow"><span class="section-number" aria-hidden="true">01</span><span data-i18n="central.eyebrow">Siam Lounge · Central Pattaya</span></p>
+          <h2 id="central-title" data-i18n="central.title">Your place in Central.</h2>
+          <p class="location-kind" data-i18n="kind.restaurant">Restaurant · Bar · Lounge</p>
+          <p data-i18n="central.description">Discover Siam Lounge in Central Pattaya. From breakfast and lunch to dinner and drinks, explore the restaurant, bar and lounge.</p>
+          <ul class="service-list"><li data-i18n="food.breakfast">Breakfast</li><li data-i18n="food.lunch">Lunch</li><li data-i18n="food.dinner">Dinner</li><li data-i18n="food.drinks">Food & Drinks</li></ul>
+          <div class="button-row"><a class="button button-gold" href="#contact" data-open-dialog="table-dialog" data-location="central"><span data-i18n="cta.table">Reserve a table</span><span aria-hidden="true">↗</span></a><a class="button button-line" href="#menu"><span data-i18n="action.menu">View Menu</span><span aria-hidden="true">↗</span></a></div>
+          <div class="location-secondary"><a class="text-link" data-config-link="central.facebook" data-official-central href="https://www.facebook.com/siamloungepattaya" target="_blank" rel="noopener noreferrer">Facebook <span aria-hidden="true">↗</span><span class="sr-only" data-i18n="external"> (opens in a new tab)</span></a><a class="text-link" href="#contact" data-open-dialog="locations-dialog"><span data-i18n="cta.directions">Get directions</span><span aria-hidden="true">↗</span></a></div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section location-section pratumnak-section" id="pratumnak" aria-labelledby="pratumnak-title">
+      <div class="container location-layout location-layout-reverse">
+        <div class="location-copy reveal">
+          <p class="eyebrow"><span class="section-number" aria-hidden="true">02</span><span data-i18n="pratumnak.eyebrow">Siam Lounge · Pratumnak</span></p>
+          <h2 id="pratumnak-title" data-i18n="pratumnak.title">Make time for Pratumnak.</h2>
+          <p class="location-kind" data-i18n="kind.pratumnak">Restaurant · Bar · Lounge · Stay</p>
+          <p data-i18n="pratumnak.description">Explore the other side of Siam Lounge at our Pratumnak location. Restaurant, bar and lounge come together with accommodation at the same location.</p>
+          <div class="button-row"><a class="button button-gold" href="#contact" data-open-dialog="table-dialog" data-location="pratumnak"><span data-i18n="cta.table">Reserve a table</span><span aria-hidden="true">↗</span></a><a class="button button-line" href="#menu"><span data-i18n="action.menu">View Menu</span><span aria-hidden="true">↗</span></a></div>
+          <div class="location-secondary"><a class="text-link" data-config-link="pratumnak.facebook" href="https://www.facebook.com/SiamLoungePratumnak" target="_blank" rel="noopener noreferrer">Facebook <span aria-hidden="true">↗</span><span class="sr-only" data-i18n="external"> (opens in a new tab)</span></a><a class="text-link" href="#contact" data-open-dialog="locations-dialog"><span data-i18n="cta.directions">Get directions</span><span aria-hidden="true">↗</span></a></div>
+          <a class="text-link accommodation-link" href="#stay"><span data-i18n="action.accommodation">View Accommodation</span><span aria-hidden="true">↗</span></a>
+          
+        </div>
+        <div class="location-visual reveal"><img class="venue-photo location-photo" src="assets/images/pratumnak-dining-bar-960.webp" srcset="assets/images/pratumnak-dining-bar-640.webp 640w, assets/images/pratumnak-dining-bar-960.webp 960w, assets/images/pratumnak-dining-bar-1600.webp 1600w" sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1200px) 45vw, 570px" width="1600" height="1200" loading="lazy" decoding="async" alt="Wooden dining tables, white chairs and an illuminated bar at Siam Lounge Pratumnak." data-i18n-alt="photo.pratumnak-dining-bar"><span class="visual-caption" data-i18n="pratumnak.caption">A different side of Siam Lounge</span></div>
+      </div>
+    </section>
+
+    <section class="section stay-section" id="stay" aria-labelledby="stay-title">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow" data-i18n="stay.eyebrow">Book your stay</p><h2 id="stay-title" data-i18n="stay.title">Stay at Siam Lounge Pratumnak</h2></div><div class="section-intro"><p class="stay-subtitle" data-i18n="stay.subtitle">Comfortable accommodation in Pattaya.</p><p data-i18n="stay.description">Plan your stay at Siam Lounge Pratumnak. Prepare an accommodation request or visit our official Booking.com listing.</p></div></div>
+        <div class="stay-booking-intro">
+          <div class="button-row"><a class="button button-dark" href="#contact" data-open-dialog="stay-dialog"><span data-i18n="cta.stay">Book your stay</span><span aria-hidden="true">↗</span></a><a class="button button-line" data-config-link="stay.booking" href="https://www.booking.com/hotel/th/siam-lounge-pratumnak.de.html" target="_blank" rel="noopener noreferrer"><span data-i18n="cta.booking">Book on Booking.com</span><span aria-hidden="true">↗</span><span class="sr-only" data-i18n="external"> (opens in a new tab)</span></a></div>
+          <p data-i18n="stay.requestNote">An enquiry, not a booking. Availability and your stay must be confirmed by Siam Lounge.</p>
+        </div>
+        <p class="placeholder-notice" data-i18n="stay.notice">Original photos of the accommodation, not room categories. Please confirm amenities and availability when making an enquiry.</p>
+        <div class="rooms-grid">
+          <article class="room-card reveal"><img class="venue-photo room-photo" src="assets/images/stay-room-garden-view-960.webp" srcset="assets/images/stay-room-garden-view-640.webp 640w, assets/images/stay-room-garden-view-960.webp 960w, assets/images/stay-room-garden-view-1600.webp 1600w" sizes="(max-width: 420px) calc(100vw - 36px), (max-width: 760px) 50vw, (max-width: 1200px) 30vw, 400px" width="1600" height="1200" loading="lazy" decoding="async" alt="A bed with folded towels, a mirror and a view of greenery through the open doorway." data-i18n-alt="photo.stay-room-garden-view"><div class="room-copy"><span class="room-status">SIAM LOUNGE PRATUMNAK</span><h3 data-i18n="room.view">Room interior</h3><p data-i18n="room.viewDetails">A bed and a view of the green outdoor area.</p></div></article>
+          <article class="room-card reveal"><img class="venue-photo room-photo" src="assets/images/stay-living-area-960.webp" srcset="assets/images/stay-living-area-640.webp 640w, assets/images/stay-living-area-960.webp 960w, assets/images/stay-living-area-1600.webp 1600w" sizes="(max-width: 420px) calc(100vw - 36px), (max-width: 760px) 50vw, (max-width: 1200px) 30vw, 400px" width="1600" height="1200" loading="lazy" decoding="async" alt="A seating area with a sofa, wall-mounted television and wooden counter, looking toward the bed." data-i18n-alt="photo.stay-living-area"><div class="room-copy"><span class="room-status">SIAM LOUNGE PRATUMNAK</span><h3 data-i18n="room.living">Seating area</h3><p data-i18n="room.livingDetails">A sofa, television and wooden counter.</p></div></article>
+          <article class="room-card reveal"><img class="venue-photo room-photo" src="assets/images/stay-bathroom-960.webp" srcset="assets/images/stay-bathroom-640.webp 480w, assets/images/stay-bathroom-960.webp 720w, assets/images/stay-bathroom-1600.webp 1200w" sizes="(max-width: 420px) calc(100vw - 36px), (max-width: 760px) 50vw, (max-width: 1200px) 30vw, 400px" width="1200" height="1600" loading="lazy" decoding="async" alt="A tiled bathroom with a glass shower screen, toilet and washbasin." data-i18n-alt="photo.stay-bathroom"><div class="room-copy"><span class="room-status">SIAM LOUNGE PRATUMNAK</span><h3 data-i18n="room.bathroom">Bathroom</h3><p data-i18n="room.bathroomDetails">A shower, toilet and washbasin.</p></div></article>
+        </div>
+        <div class="stay-actions"><span data-stay-agoda><span class="button button-unavailable" data-i18n="agoda.pending">Agoda · Link coming soon</span></span><p data-i18n="stay.booking">See Booking.com for current availability and booking details.</p></div>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow" data-i18n="menu.eyebrow">At the table</p><h2 id="menu-title" data-i18n="menu.title">Something to look forward to.</h2></div><p class="section-intro" data-i18n="menu.description">Our menu will be shared here. Explore the planned categories below.</p></div>
+        <div class="menu-categories" role="group" aria-label="Menu categories" data-i18n-aria="menu.categories">
+          <button type="button" data-menu-category="breakfast" aria-pressed="true" aria-controls="menu-content menu-dishes" data-i18n="food.breakfast" disabled>Breakfast</button>
+          <button type="button" data-menu-category="thai" aria-pressed="false" aria-controls="menu-content menu-dishes" data-i18n="food.thai" disabled>Thai</button>
+          <button type="button" data-menu-category="german" aria-pressed="false" aria-controls="menu-content menu-dishes" data-i18n="food.german" disabled>German</button>
+          <button type="button" data-menu-category="european" aria-pressed="false" aria-controls="menu-content menu-dishes" data-i18n="food.european" disabled>European</button>
+          <button type="button" data-menu-category="drinks" aria-pressed="false" aria-controls="menu-content menu-dishes" data-i18n="food.beverages" disabled>Drinks</button>
+        </div>
+        <div class="menu-panel" id="menu-content" aria-live="polite" aria-atomic="true">
+          <span class="menu-motif" aria-hidden="true"><span></span></span>
+          <p class="eyebrow" id="menu-category-name" data-i18n="food.breakfast">Breakfast</p>
+          <h3 data-i18n="menu.soon">Menu coming soon</h3>
+          <p data-i18n="menu.pending">We are preparing this section. Confirmed dishes and prices will be added here.</p>
+          <a class="text-link" href="#contact"><span data-i18n="menu.contact">Contact our locations</span><span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="menu-dishes" id="menu-dishes" aria-live="polite" hidden></div>
+      </div>
+    </section>
+
+    <section class="section events-section" id="events" aria-labelledby="events-title">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow" data-i18n="events.eyebrow">Good company. More to come.</p><h2 id="events-title"><span data-i18n="events.title">What's on</span><span class="events-subtitle" data-i18n="events.at">at Siam Lounge</span></h2></div><p class="section-intro" data-i18n="events.description">Discover upcoming gatherings at our Central and Pratumnak locations.</p></div>
+        <div class="events-empty" id="events-empty"><span class="event-line-art" aria-hidden="true"></span><p data-i18n="events.empty">New events will be announced here soon.</p><p data-i18n="events.emptyNote">Follow our official Facebook pages for updates from each location.</p><a class="text-link" href="#contact" data-i18n="action.contact">Contact Us</a></div>
+        <div class="events-grid" id="events-grid" hidden></div>
+        <section class="event-archive" id="event-archive" aria-labelledby="archive-title" hidden><h3 id="archive-title" data-i18n="events.archive">Past events</h3><p data-i18n="events.archiveIntro">Pictures and memories from previous events.</p><div class="events-grid" id="past-events-grid"></div></section>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow" data-i18n="gallery.eyebrow">A glimpse of Siam Lounge</p><h2 id="gallery-title" data-i18n="gallery.title">The moments. The places.</h2></div><p class="section-intro" data-i18n="gallery.description">Original photos from Central and Pratumnak: food, people, places and accommodation.</p></div>
+        <div class="gallery-filters" role="group" aria-label="Gallery categories" data-i18n-aria="gallery.filters" hidden>
+          <button type="button" data-gallery-filter="all" aria-pressed="true" aria-controls="gallery-grid" data-i18n="gallery.all">All</button>
+          <button type="button" data-gallery-filter="food" aria-pressed="false" aria-controls="gallery-grid" data-i18n="gallery.food">Food</button>
+          <button type="button" data-gallery-filter="central" aria-pressed="false" aria-controls="gallery-grid" data-i18n="nav.central">Central</button>
+          <button type="button" data-gallery-filter="pratumnak" aria-pressed="false" aria-controls="gallery-grid" data-i18n="nav.pratumnak">Pratumnak</button>
+          <button type="button" data-gallery-filter="stay" aria-pressed="false" aria-controls="gallery-grid" data-i18n="nav.stay">Stay</button>
+          <button type="button" data-gallery-filter="events" aria-pressed="false" aria-controls="gallery-grid" data-i18n="gallery.events">Events</button>
+        </div>
+        <div class="gallery-grid" id="gallery-grid">
+          <figure class="gallery-item"><img class="content-photo" src="assets/images/central-food-presentation-640.webp" srcset="assets/images/central-food-presentation-640.webp 640w, assets/images/central-food-presentation-960.webp 960w, assets/images/central-food-presentation-1600.webp 1600w" sizes="(max-width: 760px) calc((100vw - 58px) / 2), (max-width: 1200px) 30vw, 400px" width="1600" height="1230" loading="lazy" decoding="async" alt="A team member holding a plate of food in front of the gold Siam Lounge emblem at Central." data-i18n-alt="photo.central-food-presentation"><figcaption data-i18n="gallery.food">Food</figcaption></figure>
+          <figure class="gallery-item"><img class="content-photo" src="assets/images/pratumnak-dining-bar-640.webp" srcset="assets/images/pratumnak-dining-bar-640.webp 640w, assets/images/pratumnak-dining-bar-960.webp 960w, assets/images/pratumnak-dining-bar-1600.webp 1600w" sizes="(max-width: 760px) calc((100vw - 58px) / 2), (max-width: 1200px) 30vw, 400px" width="1600" height="1200" loading="lazy" decoding="async" alt="Wooden dining tables, white chairs and an illuminated bar at Siam Lounge Pratumnak." data-i18n-alt="photo.pratumnak-dining-bar"><figcaption data-i18n="nav.pratumnak">Pratumnak</figcaption></figure>
+          <figure class="gallery-item"><img class="content-photo" src="assets/images/stay-room-garden-view-640.webp" srcset="assets/images/stay-room-garden-view-640.webp 640w, assets/images/stay-room-garden-view-960.webp 960w, assets/images/stay-room-garden-view-1600.webp 1600w" sizes="(max-width: 760px) calc((100vw - 58px) / 2), (max-width: 1200px) 30vw, 400px" width="1600" height="1200" loading="lazy" decoding="async" alt="A bed with folded towels, a mirror and a view of greenery through the open doorway." data-i18n-alt="photo.stay-room-garden-view"><figcaption data-i18n="gallery.stay">Accommodation</figcaption></figure>
+          <figure class="gallery-item"><img class="content-photo" src="assets/images/central-team-640.webp" srcset="assets/images/central-team-640.webp 640w, assets/images/central-team-960.webp 960w, assets/images/central-team-1600.webp 1600w" sizes="(max-width: 760px) calc((100vw - 58px) / 2), (max-width: 1200px) 30vw, 400px" width="1600" height="1200" loading="lazy" decoding="async" alt="The Siam Lounge team standing together beneath the gold emblem at Central." data-i18n-alt="photo.central-team"><figcaption data-i18n="nav.central">Central</figcaption></figure>
+          <figure class="gallery-item"><img class="content-photo" src="assets/images/pratumnak-exterior-night-640.webp" srcset="assets/images/pratumnak-exterior-night-640.webp 640w, assets/images/pratumnak-exterior-night-960.webp 960w, assets/images/pratumnak-exterior-night-1600.webp 1600w" sizes="(max-width: 760px) calc((100vw - 58px) / 2), (max-width: 1200px) 30vw, 400px" width="1600" height="1200" loading="lazy" decoding="async" alt="Siam Lounge Pratumnak at night, with illuminated palms and the covered restaurant terrace." data-i18n-alt="photo.pratumnak-exterior-night"><figcaption data-i18n="nav.pratumnak">Pratumnak</figcaption></figure>
+          <figure class="gallery-item"><img class="content-photo" src="assets/images/stay-living-area-640.webp" srcset="assets/images/stay-living-area-640.webp 640w, assets/images/stay-living-area-960.webp 960w, assets/images/stay-living-area-1600.webp 1600w" sizes="(max-width: 760px) calc((100vw - 58px) / 2), (max-width: 1200px) 30vw, 400px" width="1600" height="1200" loading="lazy" decoding="async" alt="A seating area with a sofa, wall-mounted television and wooden counter, looking toward the bed." data-i18n-alt="photo.stay-living-area"><figcaption data-i18n="gallery.stay">Accommodation</figcaption></figure>
+          <figure class="gallery-item"><img class="content-photo" src="assets/images/central-gathering-640.webp" srcset="assets/images/central-gathering-640.webp 640w, assets/images/central-gathering-960.webp 960w, assets/images/central-gathering-1600.webp 1600w" sizes="(max-width: 760px) calc((100vw - 58px) / 2), (max-width: 1200px) 30vw, 400px" width="1600" height="1200" loading="lazy" decoding="async" alt="A group gathered around dining tables beneath warm lights at Siam Lounge Central." data-i18n-alt="photo.central-gathering"><figcaption data-i18n="gallery.events">Events</figcaption></figure>
+          <figure class="gallery-item"><img class="content-photo" src="assets/images/pratumnak-terrace-tables-640.webp" srcset="assets/images/pratumnak-terrace-tables-640.webp 640w, assets/images/pratumnak-terrace-tables-960.webp 960w, assets/images/pratumnak-terrace-tables-1600.webp 1600w" sizes="(max-width: 760px) calc((100vw - 58px) / 2), (max-width: 1200px) 30vw, 400px" width="1600" height="1200" loading="lazy" decoding="async" alt="Wooden tables and outdoor seating beside the white bar at Pratumnak." data-i18n-alt="photo.pratumnak-terrace-tables"><figcaption data-i18n="nav.pratumnak">Pratumnak</figcaption></figure>
+          <figure class="gallery-item"><img class="content-photo" src="assets/images/stay-bathroom-640.webp" srcset="assets/images/stay-bathroom-640.webp 480w, assets/images/stay-bathroom-960.webp 720w, assets/images/stay-bathroom-1600.webp 1200w" sizes="(max-width: 760px) calc((100vw - 58px) / 2), (max-width: 1200px) 30vw, 400px" width="1200" height="1600" loading="lazy" decoding="async" alt="A tiled bathroom with a glass shower screen, toilet and washbasin." data-i18n-alt="photo.stay-bathroom"><figcaption data-i18n="gallery.stay">Accommodation</figcaption></figure>
+          <figure class="gallery-item"><img class="content-photo" src="assets/images/pratumnak-pool-table-640.webp" srcset="assets/images/pratumnak-pool-table-640.webp 640w, assets/images/pratumnak-pool-table-960.webp 960w, assets/images/pratumnak-pool-table-1600.webp 1600w" sizes="(max-width: 760px) calc((100vw - 58px) / 2), (max-width: 1200px) 30vw, 400px" width="1600" height="1200" loading="lazy" decoding="async" alt="A pool table with racked balls and a player, with the restaurant seating beyond." data-i18n-alt="photo.pratumnak-pool-table"><figcaption data-i18n="nav.pratumnak">Pratumnak</figcaption></figure>
+          <figure class="gallery-item"><img class="content-photo" src="assets/images/stay-window-detail-640.webp" srcset="assets/images/stay-window-detail-640.webp 640w, assets/images/stay-window-detail-960.webp 960w, assets/images/stay-window-detail-1600.webp 1600w" sizes="(max-width: 760px) calc((100vw - 58px) / 2), (max-width: 1200px) 30vw, 400px" width="1600" height="1200" loading="lazy" decoding="async" alt="A wooden counter with glasses and a plant beside a window overlooking greenery." data-i18n-alt="photo.stay-window-detail"><figcaption data-i18n="gallery.stay">Accommodation</figcaption></figure>
+          <figure class="gallery-item"><img class="content-photo" src="assets/images/pratumnak-guests-terrace-640.webp" srcset="assets/images/pratumnak-guests-terrace-640.webp 640w, assets/images/pratumnak-guests-terrace-960.webp 960w, assets/images/pratumnak-guests-terrace-1600.webp 1600w" sizes="(max-width: 760px) calc((100vw - 58px) / 2), (max-width: 1200px) 30vw, 400px" width="1600" height="1200" loading="lazy" decoding="async" alt="Guests seated at tables beneath the illuminated terrace roof at Pratumnak." data-i18n-alt="photo.pratumnak-guests-terrace"><figcaption data-i18n="gallery.events">Events</figcaption></figure>
+          <figure class="gallery-item"><img class="content-photo" src="assets/images/stay-courtyard-640.webp" srcset="assets/images/stay-courtyard-640.webp 640w, assets/images/stay-courtyard-960.webp 960w, assets/images/stay-courtyard-1600.webp 1600w" sizes="(max-width: 760px) calc((100vw - 58px) / 2), (max-width: 1200px) 30vw, 400px" width="1600" height="1200" loading="lazy" decoding="async" alt="An overhead view of an outdoor seating area with tables, chairs and tropical plants." data-i18n-alt="photo.stay-courtyard"><figcaption data-i18n="gallery.stay">Accommodation</figcaption></figure>
+          <figure class="gallery-item"><img class="content-photo" src="assets/images/pratumnak-table-setting-640.webp" srcset="assets/images/pratumnak-table-setting-640.webp 640w, assets/images/pratumnak-table-setting-960.webp 960w, assets/images/pratumnak-table-setting-1600.webp 1600w" sizes="(max-width: 760px) calc((100vw - 58px) / 2), (max-width: 1200px) 30vw, 400px" width="1600" height="1200" loading="lazy" decoding="async" alt="A wooden dining table set with white placemats, surrounded by white chairs at Pratumnak." data-i18n-alt="photo.pratumnak-table-setting"><figcaption data-i18n="nav.pratumnak">Pratumnak</figcaption></figure>
+          <figure class="gallery-item"><img class="content-photo" src="assets/images/stay-bed-detail-640.webp" srcset="assets/images/stay-bed-detail-640.webp 640w, assets/images/stay-bed-detail-960.webp 960w, assets/images/stay-bed-detail-1600.webp 1600w" sizes="(max-width: 760px) calc((100vw - 58px) / 2), (max-width: 1200px) 30vw, 400px" width="1600" height="1200" loading="lazy" decoding="async" alt="Rolled towels on a neatly made bed with white pillows and linen." data-i18n-alt="photo.stay-bed-detail"><figcaption data-i18n="gallery.stay">Accommodation</figcaption></figure>
+          <figure class="gallery-item"><img class="content-photo" src="assets/images/stay-room-amenities-640.webp" srcset="assets/images/stay-room-amenities-640.webp 480w, assets/images/stay-room-amenities-960.webp 720w, assets/images/stay-room-amenities-1600.webp 1200w" sizes="(max-width: 760px) calc((100vw - 58px) / 2), (max-width: 1200px) 30vw, 400px" width="1200" height="1600" loading="lazy" decoding="async" alt="A refrigerator, kettle and open wardrobe beside a sofa in the accommodation." data-i18n-alt="photo.stay-room-amenities"><figcaption data-i18n="gallery.stay">Accommodation</figcaption></figure>
+          <figure class="gallery-item"><img class="content-photo" src="assets/images/pratumnak-evening-dining-640.webp" srcset="assets/images/pratumnak-evening-dining-640.webp 640w, assets/images/pratumnak-evening-dining-960.webp 960w, assets/images/pratumnak-evening-dining-1600.webp 1600w" sizes="(max-width: 760px) calc((100vw - 58px) / 2), (max-width: 1200px) 30vw, 400px" width="1600" height="1200" loading="lazy" decoding="async" alt="Warmly lit dining tables and the bar inside Siam Lounge Pratumnak in the evening." data-i18n-alt="photo.pratumnak-evening-dining"><figcaption data-i18n="nav.pratumnak">Pratumnak</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow" data-i18n="contact.eyebrow">We look forward to hearing from you</p><h2 id="contact-title" data-i18n="contact.title">Let's make a connection.</h2></div><p class="section-intro" data-i18n="contact.description">Reach each location through its official Facebook page. More ways to get in touch will be added here.</p></div>
+        <div class="contact-grid">
+          <article class="contact-card contact-central reveal" data-location="central"><p class="eyebrow" data-i18n="contact.central">Central Pattaya</p><h3>Siam Lounge Central</h3><dl class="contact-details"><div><dt data-i18n="contact.phone">Phone</dt><dd data-contact="central.phone"><span data-i18n="common.soon">Coming soon</span></dd></div><div><dt>WhatsApp</dt><dd data-contact="central.whatsapp"><span data-i18n="common.soon">Coming soon</span></dd></div><div><dt>LINE</dt><dd data-contact="central.line"><span data-i18n="common.soon">Coming soon</span></dd></div><div><dt>Facebook</dt><dd data-contact="central.facebook"><a data-official-central href="https://www.facebook.com/siamloungepattaya" target="_blank" rel="noopener noreferrer"><span data-i18n="contact.facebook">Visit official page</span> ↗<span class="sr-only" data-i18n="external"> (opens in a new tab)</span></a></dd></div><div><dt>Google Maps</dt><dd data-contact="central.maps"><span data-i18n="common.soon">Coming soon</span></dd></div><div><dt data-i18n="contact.email">Email</dt><dd data-contact="central.email"><span data-i18n="common.soon">Coming soon</span></dd></div><div><dt data-i18n="contact.hours">Opening hours</dt><dd data-contact="central.hours"><span data-i18n="common.soon">Coming soon</span></dd></div><div><dt data-i18n="contact.address">Address</dt><dd data-contact="central.address"><span data-i18n="common.soon">Coming soon</span></dd></div></dl><a class="button button-gold" href="#contact" data-open-dialog="table-dialog" data-location="central"><span data-i18n="cta.table">Reserve a table</span><span aria-hidden="true">↗</span></a></article>
+          <article class="contact-card reveal" data-location="pratumnak"><p class="eyebrow" data-i18n="nav.pratumnak">Pratumnak</p><h3>Siam Lounge Pratumnak</h3><dl class="contact-details"><div><dt data-i18n="contact.phone">Phone</dt><dd data-contact="pratumnak.phone"><span data-i18n="common.soon">Coming soon</span></dd></div><div><dt>WhatsApp</dt><dd data-contact="pratumnak.whatsapp"><span data-i18n="common.soon">Coming soon</span></dd></div><div><dt>LINE</dt><dd data-contact="pratumnak.line"><span data-i18n="common.soon">Coming soon</span></dd></div><div><dt>Facebook</dt><dd data-contact="pratumnak.facebook"><a href="https://www.facebook.com/SiamLoungePratumnak" target="_blank" rel="noopener noreferrer"><span data-i18n="contact.facebook">Visit official page</span> ↗<span class="sr-only" data-i18n="external"> (opens in a new tab)</span></a></dd></div><div><dt>Google Maps</dt><dd data-contact="pratumnak.maps"><span data-i18n="common.soon">Coming soon</span></dd></div><div><dt data-i18n="contact.email">Email</dt><dd data-contact="pratumnak.email"><span data-i18n="common.soon">Coming soon</span></dd></div><div><dt data-i18n="contact.hours">Opening hours</dt><dd data-contact="pratumnak.hours"><span data-i18n="common.soon">Coming soon</span></dd></div><div><dt data-i18n="contact.address">Address</dt><dd data-contact="pratumnak.address"><span data-i18n="common.soon">Coming soon</span></dd></div></dl><a class="button button-dark" href="#contact" data-open-dialog="table-dialog" data-location="pratumnak"><span data-i18n="cta.table">Reserve a table</span><span aria-hidden="true">↗</span></a></article>
+        </div>
+      </div>
+    </section>
+    <noscript><p class="container nojs-note">Enable JavaScript to prepare requests on this page, or contact a location through its official Facebook page.</p></noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main"><a class="brand footer-brand" href="#home" aria-label="Siam Lounge Pattaya — home" data-i18n-aria="brand.home"><!-- Original logo is optional: set SIAM_CONFIG.logo in js/config.js. Text remains if empty or unavailable. --><span class="brand-name">SIAM LOUNGE<span>PATTAYA</span></span></a><p data-i18n="tagline">EAT · DRINK · STAY</p><nav aria-label="Footer navigation" data-i18n-aria="footer.nav"><a href="#central" data-i18n="nav.central">Central</a><a href="#pratumnak" data-i18n="nav.pratumnak">Pratumnak</a><a href="#stay" data-i18n="nav.stay">Stay</a><a href="#menu" data-i18n="nav.menu">Menu</a><a data-official-central href="https://www.facebook.com/siamloungepattaya" target="_blank" rel="noopener noreferrer">Facebook <span aria-hidden="true">↗</span><span class="sr-only" data-i18n="external"> (opens in a new tab)</span></a></nav></div>
+    <div class="container footer-bottom"><p>© <span id="copyright-year">2026</span> Siam Lounge Pattaya. <span data-i18n="footer.rights">All rights reserved.</span></p><a href="#home"><span data-i18n="footer.top">Back to top</span> <span aria-hidden="true">↑</span></a></div>
+  </footer>
+  <nav class="quick-actions" aria-label="Quick actions" data-i18n-aria="quick.label" hidden>
+    <button type="button" data-open-dialog="table-dialog" data-i18n="cta.table">Reserve a table</button>
+    <button type="button" data-open-dialog="stay-dialog" data-i18n="cta.stay">Book your stay</button>
+  </nav>
+  <dialog class="site-dialog request-dialog" id="table-dialog" aria-labelledby="table-dialog-title" aria-describedby="table-intro">
+    <div class="dialog-toolbar"><div class="language-switch" role="group" aria-label="Choose language" data-i18n-aria="language.label" hidden><button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button type="button" data-language="de" lang="de" aria-label="Deutsch" aria-pressed="false">DE</button><span aria-hidden="true">/</span><button type="button" data-language="th" lang="th" aria-label="ไทย" aria-pressed="false">ไทย</button></div><button type="button" class="dialog-close" data-close-dialog aria-label="Close dialog" data-i18n-aria="dialog.close">×</button></div><div class="dialog-body">
+    <div class="dialog-heading"><p class="eyebrow" data-i18n="request.eyebrow">Your next Siam Lounge moment</p><h2 id="table-dialog-title" data-dialog-heading tabindex="-1" data-i18n="request.tableTitle">Request a table reservation</h2><p id="table-intro" data-i18n="request.tableIntro">Tell us your plans. Prepare a request to share with Siam Lounge; this does not reserve a table.</p></div>
+    <form id="table-form" method="dialog" novalidate data-request-form="table">
+      <p class="form-note" data-i18n="request.requiredNote">Fields marked * are required. Dates and times refer to Pattaya, Thailand.</p>
+      <div class="form-errors" role="alert" tabindex="-1" hidden></div>
+      <div class="form-grid">
+        <div class="form-field field-wide"><label for="table-location"><span data-i18n="field.location">Location</span> <span aria-hidden="true">*</span></label><select name="location" id="table-location" required aria-describedby="table-location-error"><option value="" selected data-i18n="field.chooseLocation">Choose a location</option><option value="central">Siam Lounge Central</option><option value="pratumnak">Siam Lounge Pratumnak</option></select><span class="field-error" id="table-location-error" hidden></span></div><div class="form-field"><label for="table-date"><span data-i18n="field.date">Date</span> <span aria-hidden="true">*</span></label><input type="date" id="table-date" name="date" required aria-describedby="table-date-error" ><span class="field-error" id="table-date-error" hidden></span></div><div class="form-field"><label for="table-time"><span data-i18n="field.time">Time</span> <span aria-hidden="true">*</span></label><input type="time" id="table-time" name="time" required aria-describedby="table-time-error" ><span class="field-error" id="table-time-error" hidden></span></div>
+        <div class="form-field"><label for="table-guests"><span data-i18n="field.guests">Number of guests</span> <span aria-hidden="true">*</span></label><input type="number" id="table-guests" name="guests" required aria-describedby="table-guests-error" min="1" max="99" step="1" inputmode="numeric"><span class="field-error" id="table-guests-error" hidden></span></div><div class="form-field"><label for="table-name"><span data-i18n="field.name">Name</span> <span aria-hidden="true">*</span></label><input type="text" id="table-name" name="name" required aria-describedby="table-name-error" autocomplete="name" minlength="2" maxlength="100"><span class="field-error" id="table-name-error" hidden></span></div><div class="form-field"><label for="table-phone"><span data-i18n="field.phone">Phone / WhatsApp / LINE</span> <span aria-hidden="true">*</span></label><input type="text" id="table-phone" name="phone" required aria-describedby="table-phone-error" autocomplete="tel" autocapitalize="none" spellcheck="false" maxlength="40"><span class="field-error" id="table-phone-error" hidden></span></div><div class="form-field"><label for="table-email"><span data-i18n="field.email">Email</span> <span class="field-optional" data-i18n="field.optional">(optional)</span></label><input type="email" id="table-email" name="email"  aria-describedby="table-email-error" autocomplete="email" maxlength="254"><span class="field-error" id="table-email-error" hidden></span></div>
+        <p class="request-event field-wide" hidden></p>
+        <div class="form-field field-wide"><label for="table-requests"><span data-i18n="field.requests">Special requests</span> <span class="field-optional" data-i18n="field.optional">(optional)</span></label><textarea id="table-requests" name="requests"  aria-describedby="table-requests-error" maxlength="1200" rows="3"></textarea><span class="field-error" id="table-requests-error" hidden></span></div>
+        <div class="form-field field-wide"><label class="consent-label" for="table-consent"><input type="checkbox" name="consent" id="table-consent" required aria-describedby="table-consent-error"><span data-i18n="request.tableConsent">I understand that this is a reservation request and is only confirmed after confirmation from Siam Lounge.</span></label><span class="field-error" id="table-consent-error" hidden></span></div>
+      </div>
+      <p class="form-note" data-i18n="request.privacy">These details are used only to prepare your request in this browser. They are not sent to Siam Lounge or saved by this website.</p>
+      <div class="button-row form-actions"><button class="button button-line" type="reset" data-i18n="request.clear">Clear form</button></div>
+    </form>
+    <section class="request-result" id="table-result" aria-labelledby="table-review" hidden>
+      <h3 id="table-review" tabindex="-1" data-i18n="request.review">Your request is ready to review</h3>
+      <p class="request-notice" data-i18n="request.notSent">Nothing has been sent. Copy your request and share it with Siam Lounge. Your request is only confirmed when Siam Lounge replies with confirmation.</p>
+      <label for="table-summary" data-i18n="request.summary">Request summary</label><textarea id="table-summary" class="request-summary" readonly rows="12"></textarea>
+      <div class="button-row"><button type="button" class="button button-line" data-edit-request="table" data-i18n="request.edit">Edit request</button></div>
+
+      <div class="delivery-actions"><a class="button button-gold" data-send-whatsapp target="_blank" rel="noopener noreferrer" hidden><span data-i18n="request.whatsapp">Open WhatsApp</span><span class="sr-only" data-i18n="external"> (opens in a new tab)</span></a><a class="button button-line" data-send-email hidden data-i18n="request.emailDraft">Open email draft</a><button type="button" class="button button-unavailable" data-delivery-unavailable disabled data-i18n="request.contactPending">Contact details coming soon</button></div>
+      <p class="form-note" data-i18n="request.handoff">Review the message in WhatsApp or your email app and send it yourself. Opening a draft does not send or confirm your request.</p>
+      <span class="request-facebook" data-contact="central.facebook"></span>
+    </section>
+  </div>
+    <footer class="request-dialog-footer">
+      <button class="button button-dark" type="submit" form="table-form" data-i18n="request.prepare">Prepare request</button>
+      <button class="button button-dark" type="button" data-copy-request="table" data-i18n="request.copyTable" hidden>Copy reservation request</button>
+      <p class="copy-status" role="status" aria-atomic="true"></p>
+    </footer>
+  </dialog>
+  <dialog class="site-dialog request-dialog" id="stay-dialog" aria-labelledby="stay-dialog-title" aria-describedby="stay-intro">
+    <div class="dialog-toolbar"><div class="language-switch" role="group" aria-label="Choose language" data-i18n-aria="language.label" hidden><button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button type="button" data-language="de" lang="de" aria-label="Deutsch" aria-pressed="false">DE</button><span aria-hidden="true">/</span><button type="button" data-language="th" lang="th" aria-label="ไทย" aria-pressed="false">ไทย</button></div><button type="button" class="dialog-close" data-close-dialog aria-label="Close dialog" data-i18n-aria="dialog.close">×</button></div><div class="dialog-body">
+    <div class="dialog-heading"><p class="eyebrow" data-i18n="request.eyebrow">Your next Siam Lounge moment</p><h2 id="stay-dialog-title" data-dialog-heading tabindex="-1" data-i18n="request.stayTitle">Accommodation request</h2><p id="stay-intro" data-i18n="request.stayIntro">Tell us when you would like to stay in Pratumnak. This request does not check live availability or confirm a booking.</p></div>
+    <form id="stay-form" method="dialog" novalidate data-request-form="stay">
+      <p class="form-note" data-i18n="request.requiredNote">Fields marked * are required. Dates and times refer to Pattaya, Thailand.</p>
+      <div class="form-errors" role="alert" tabindex="-1" hidden></div>
+      <div class="form-grid">
+        <p class="fixed-location field-wide">SIAM LOUNGE PRATUMNAK</p><div class="form-field"><label for="stay-checkin"><span data-i18n="field.checkin">Check-in</span> <span aria-hidden="true">*</span></label><input type="date" id="stay-checkin" name="checkin" required aria-describedby="stay-checkin-error" ><span class="field-error" id="stay-checkin-error" hidden></span></div><div class="form-field"><label for="stay-checkout"><span data-i18n="field.checkout">Check-out</span> <span aria-hidden="true">*</span></label><input type="date" id="stay-checkout" name="checkout" required aria-describedby="stay-checkout-error" ><span class="field-error" id="stay-checkout-error" hidden></span></div>
+        <div class="form-field"><label for="stay-guests"><span data-i18n="field.guests">Number of guests</span> <span aria-hidden="true">*</span></label><input type="number" id="stay-guests" name="guests" required aria-describedby="stay-guests-error" min="1" max="99" step="1" inputmode="numeric"><span class="field-error" id="stay-guests-error" hidden></span></div><div class="form-field"><label for="stay-name"><span data-i18n="field.name">Name</span> <span aria-hidden="true">*</span></label><input type="text" id="stay-name" name="name" required aria-describedby="stay-name-error" autocomplete="name" minlength="2" maxlength="100"><span class="field-error" id="stay-name-error" hidden></span></div><div class="form-field"><label for="stay-phone"><span data-i18n="field.phone">Phone / WhatsApp / LINE</span> <span aria-hidden="true">*</span></label><input type="text" id="stay-phone" name="phone" required aria-describedby="stay-phone-error" autocomplete="tel" autocapitalize="none" spellcheck="false" maxlength="40"><span class="field-error" id="stay-phone-error" hidden></span></div><div class="form-field"><label for="stay-email"><span data-i18n="field.email">Email</span> <span aria-hidden="true">*</span></label><input type="email" id="stay-email" name="email" required aria-describedby="stay-email-error" autocomplete="email" maxlength="254"><span class="field-error" id="stay-email-error" hidden></span></div>
+        <p class="request-event field-wide" hidden></p>
+        <div class="form-field field-wide"><label for="stay-requests"><span data-i18n="field.requests">Special requests</span> <span class="field-optional" data-i18n="field.optional">(optional)</span></label><textarea id="stay-requests" name="requests"  aria-describedby="stay-requests-error" maxlength="1200" rows="3"></textarea><span class="field-error" id="stay-requests-error" hidden></span></div>
+        <div class="form-field field-wide"><label class="consent-label" for="stay-consent"><input type="checkbox" name="consent" id="stay-consent" required aria-describedby="stay-consent-error"><span data-i18n="request.stayConsent">I understand that this is an accommodation request. Availability and my booking must be confirmed by Siam Lounge.</span></label><span class="field-error" id="stay-consent-error" hidden></span></div>
+      </div>
+      <p class="form-note" data-i18n="request.privacy">These details are used only to prepare your request in this browser. They are not sent to Siam Lounge or saved by this website.</p>
+      <div class="button-row form-actions"><button class="button button-line" type="reset" data-i18n="request.clear">Clear form</button></div>
+    </form>
+    <section class="request-result" id="stay-result" aria-labelledby="stay-review" hidden>
+      <h3 id="stay-review" tabindex="-1" data-i18n="request.review">Your request is ready to review</h3>
+      <p class="request-notice" data-i18n="request.notSent">Nothing has been sent. Copy your request and share it with Siam Lounge. Your request is only confirmed when Siam Lounge replies with confirmation.</p>
+      <label for="stay-summary" data-i18n="request.summary">Request summary</label><textarea id="stay-summary" class="request-summary" readonly rows="12"></textarea>
+      <div class="button-row"><button type="button" class="button button-line" data-edit-request="stay" data-i18n="request.edit">Edit request</button></div>
+
+      <div class="delivery-actions"><a class="button button-gold" data-send-whatsapp target="_blank" rel="noopener noreferrer" hidden><span data-i18n="request.whatsapp">Open WhatsApp</span><span class="sr-only" data-i18n="external"> (opens in a new tab)</span></a><a class="button button-line" data-send-email hidden data-i18n="request.emailDraft">Open email draft</a><button type="button" class="button button-unavailable" data-delivery-unavailable disabled data-i18n="request.contactPending">Contact details coming soon</button></div>
+      <p class="form-note" data-i18n="request.handoff">Review the message in WhatsApp or your email app and send it yourself. Opening a draft does not send or confirm your request.</p>
+      <span class="request-facebook" data-contact="pratumnak.facebook"></span>
+    </section>
+  </div>
+    <footer class="request-dialog-footer">
+      <button class="button button-dark" type="submit" form="stay-form" data-i18n="request.prepare">Prepare request</button>
+      <button class="button button-dark" type="button" data-copy-request="stay" data-i18n="request.copyStay" hidden>Copy accommodation request</button>
+      <p class="copy-status" role="status" aria-atomic="true"></p>
+    </footer>
+  </dialog>
+  <dialog class="site-dialog" id="locations-dialog" aria-labelledby="locations-title">
+    <div class="dialog-toolbar"><div class="language-switch" role="group" aria-label="Choose language" data-i18n-aria="language.label" hidden><button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button type="button" data-language="de" lang="de" aria-label="Deutsch" aria-pressed="false">DE</button><span aria-hidden="true">/</span><button type="button" data-language="th" lang="th" aria-label="ไทย" aria-pressed="false">ไทย</button></div><button type="button" class="dialog-close" data-close-dialog aria-label="Close dialog" data-i18n-aria="dialog.close">×</button></div><div class="dialog-body"><div class="dialog-heading"><h2 id="locations-title" data-dialog-heading tabindex="-1" data-i18n="location.title">Choose your Siam Lounge</h2><p data-i18n="location.description">Find contact details, directions and table requests for each location.</p></div>
+    <div class="location-options"><article class="location-option"><h3>Siam Lounge Central</h3><dl class="contact-details"><div><dt data-i18n="contact.phone">Phone</dt><dd data-contact="central.phone"><span data-i18n="common.soon">Coming soon</span></dd></div><div><dt>WhatsApp</dt><dd data-contact="central.whatsapp"><span data-i18n="common.soon">Coming soon</span></dd></div><div><dt>Facebook</dt><dd data-contact="central.facebook"><a href="https://www.facebook.com/siamloungepattaya" target="_blank" rel="noopener noreferrer"><span data-i18n="contact.facebook">Visit official page</span> ↗<span class="sr-only" data-i18n="external"> (opens in a new tab)</span></a></dd></div><div><dt>Google Maps</dt><dd data-contact="central.maps"><span data-i18n="common.soon">Coming soon</span></dd></div><div><dt data-i18n="contact.hours">Opening hours</dt><dd data-contact="central.hours"><span data-i18n="common.soon">Coming soon</span></dd></div></dl><a class="button button-dark" href="#contact" data-open-dialog="table-dialog" data-location="central" data-i18n="cta.table">Reserve a table</a></article><article class="location-option"><h3>Siam Lounge Pratumnak</h3><dl class="contact-details"><div><dt data-i18n="contact.phone">Phone</dt><dd data-contact="pratumnak.phone"><span data-i18n="common.soon">Coming soon</span></dd></div><div><dt>WhatsApp</dt><dd data-contact="pratumnak.whatsapp"><span data-i18n="common.soon">Coming soon</span></dd></div><div><dt>Facebook</dt><dd data-contact="pratumnak.facebook"><a href="https://www.facebook.com/SiamLoungePratumnak" target="_blank" rel="noopener noreferrer"><span data-i18n="contact.facebook">Visit official page</span> ↗<span class="sr-only" data-i18n="external"> (opens in a new tab)</span></a></dd></div><div><dt>Google Maps</dt><dd data-contact="pratumnak.maps"><span data-i18n="common.soon">Coming soon</span></dd></div><div><dt data-i18n="contact.hours">Opening hours</dt><dd data-contact="pratumnak.hours"><span data-i18n="common.soon">Coming soon</span></dd></div></dl><a class="button button-dark" href="#contact" data-open-dialog="table-dialog" data-location="pratumnak" data-i18n="cta.table">Reserve a table</a></article></div>
+  </div></dialog>
+  <dialog class="site-dialog lightbox-dialog" id="lightbox-dialog" aria-labelledby="lightbox-title"><div class="dialog-toolbar"><div class="language-switch" role="group" aria-label="Choose language" data-i18n-aria="language.label" hidden><button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button type="button" data-language="de" lang="de" aria-label="Deutsch" aria-pressed="false">DE</button><span aria-hidden="true">/</span><button type="button" data-language="th" lang="th" aria-label="ไทย" aria-pressed="false">ไทย</button></div><button type="button" class="dialog-close" data-close-dialog aria-label="Close dialog" data-i18n-aria="dialog.close">×</button></div><div class="dialog-body"><h2 id="lightbox-title" data-dialog-heading tabindex="-1" data-i18n="nav.gallery">Gallery</h2><div id="lightbox-content"></div></div></dialog>
+  <p class="sr-only" id="language-status" role="status"></p>
+</body>
+</html>
