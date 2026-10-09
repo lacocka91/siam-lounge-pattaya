@@ -2,12 +2,15 @@
 
 Quelle: die vom Betreiber bereitgestellte `Siam Lounge.zip`. Verwendet werden **17 unterschiedliche Originalfotos**, alle in der Galerie; acht davon stehen zusätzlich einmal in einem der großen Bildfelder. Ein Original wird nicht in mehreren großen Bildfeldern wiederholt.
 
+Zusätzlich steht das ausdrücklich ausgewählte Original-Markenbild vollständig im Hero.
+
 ## Zuordnung
 
 Alle folgenden Dateien liegen in `assets/images/`. Die Nummer im neuen Dateinamen bezeichnet die maximale Kantenlänge, nicht eine Bildnummer.
 
 | Originaldatei in der ZIP | Web-Dateien | Verwendung |
 | --- | --- | --- |
+| `476361896_8400298233404978_6082872404815159922_n.jpg` | `siam-lounge-brand.jpg` | Hero; unverändertes Original, 1640 × 662 px |
 | `682645997_1492044518924659_33245594063865609_n.jpg` | `central-food-presentation-{640,960,1600}.webp` | Central-Hauptbereich; Galerie (food) |
 | `508419567_122120706686855362_6880964901028639095_n.jpg` | `pratumnak-dining-bar-{640,960,1600}.webp` | Pratumnak-Hauptbereich; Galerie (pratumnak) |
 | `585720624_122159751332855362_8912321289492350535_n.jpg` | `stay-room-garden-view-{640,960,1600}.webp` | Unterkunft: Zimmerblick; Galerie (stay) |
@@ -30,7 +33,7 @@ Alle folgenden Dateien liegen in `assets/images/`. Die Nummer im neuen Dateiname
 
 - WebP in 640, 960 und 1600 Pixel maximaler Kantenlänge; kein Hochskalieren, kein Beschnitt, keine Retusche oder inhaltliche Änderung.
 - WebP-Qualität 84 für kleine und 88 für mittlere/große Varianten. Originaldateien und ZIP bleiben unverändert.
-- `srcset`/`sizes` wählen die passende Variante; Lazy Loading außerhalb des unveränderten abstrakten Heros. Die Lightbox lädt die große Variante.
+- `srcset`/`sizes` wählen die passende Fotovariante; Lazy Loading außerhalb des Heros. Die Lightbox lädt die große Variante. Das Hero-Markenbild lädt sofort mit hoher Priorität als unverändertes JPG (66.959 Bytes).
 - Vollständige Motive mit `object-fit: contain`; besonders Hochformatbilder behalten neutrale Seitenflächen statt abgeschnittener Bildteile. Breite/Höhe und feste Bildrahmen reservieren Platz.
 - Die größte Variante aller 17 Bilder zusammen: 4.25 MiB. Alle 51 Varianten auf der Festplatte: 6.88 MiB. Der Browser lädt für jede Platzierung nur die passende Größe.
 - EN-, DE- und Thai-Alt-Texte beschreiben sichtbare Motive ohne Personennamen. Die Zimmerkarten zeigen Raumansichten, keine erfundenen Zimmerkategorien.
@@ -43,7 +46,6 @@ Originalmaße, Dateigrößen, SHA-256 der verwendeten Originale, Varianten und �
 | Originaldatei | Grund |
 | --- | --- |
 | `321989254_529337922485154_5246296334855059974_n.jpg` | JPG mit festem Hintergrund, Rand oder Kleinschrift; Textlogo bis zum transparenten Original behalten. |
-| `476361896_8400298233404978_6082872404815159922_n.jpg` | JPG mit festem Hintergrund, Rand oder Kleinschrift; Textlogo bis zum transparenten Original behalten. |
 | `496946585_1217325426396571_2016823574452449093_n.jpg` | Redundante Raumansicht oder weniger geeignetes Billardmotiv. |
 | `498574655_1217325409729906_7207276338157065555_n.jpg` | Redundante Raumansicht oder weniger geeignetes Billardmotiv. |
 | `499623697_122112538178855362_9089055845248978403_n.jpg` | JPG mit festem Hintergrund, Rand oder Kleinschrift; Textlogo bis zum transparenten Original behalten. |
@@ -84,7 +86,7 @@ Die weißen Speisekarten-Dateien mit den im Auftrag genannten Präfixen bleiben 
 
 ## Hero und Logo
 
-Der abstrakte Hero bleibt: Die freigegebenen Fotos eignen sich für die Inhaltsbereiche, bieten aber kein ausreichend ruhiges, großzügiges Hero-Querformat mit sicherem Platz für Text. Das Textlogo bleibt ebenfalls erhalten; die JPG-Logos haben feste Hintergründe/Ränder oder für die Navigation zu kleine Details.
+Das ausgewählte Markenbild ersetzt das abstrakte Hero-Motiv. Es wird ohne Beschnitt, Verzerrung, Retusche oder Hochskalierung auf schwarzem Hintergrund dargestellt, mit maximal 800 CSS-Pixeln Breite und proportionaler Höhe. Texte und beide Reservierungsbuttons stehen darunter; ein Overlay ist deshalb nicht nötig. Der Alt-Text ist in EN, DE und Thai hinterlegt. Das Textlogo in der Navigation bleibt erhalten.
 
 ## Für eine spätere Bildrunde
 

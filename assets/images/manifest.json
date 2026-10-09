@@ -638,11 +638,6 @@
       "reason": "JPG mit festem Hintergrund, Rand oder Kleinschrift; Textlogo bis zum transparenten Original behalten."
     },
     {
-      "original": "476361896_8400298233404978_6082872404815159922_n.jpg",
-      "group": "branding",
-      "reason": "JPG mit festem Hintergrund, Rand oder Kleinschrift; Textlogo bis zum transparenten Original behalten."
-    },
-    {
       "original": "496946585_1217325426396571_2016823574452449093_n.jpg",
       "group": "pratumnak",
       "reason": "Redundante Raumansicht oder weniger geeignetes Billardmotiv."
@@ -807,5 +802,20 @@
       "group": "food",
       "reason": "Werbegrafik mit Preisen, Aktions- oder Verfügbarkeitsangaben; kein reines Food-Foto."
     }
-  ]
+  ],
+  "hero": {
+    "original": "476361896_8400298233404978_6082872404815159922_n.jpg",
+    "archivePath": "Siam Lounge/476361896_8400298233404978_6082872404815159922_n.jpg",
+    "file": "assets/images/siam-lounge-brand.jpg",
+    "width": 1640,
+    "height": 662,
+    "bytes": 66959,
+    "sha256": "e99dff3dbafb21dce4eb3f67c194262c46336b9ff0608956742e7e758fe14d18",
+    "processing": "Original JPEG copied unchanged; displayed with proportional height and object-fit: contain; no crop or enlargement.",
+    "alt": {
+      "en": "Gold Siam Lounge logo with the words Thai & International Food Cuisines on a black background.",
+      "de": "Goldenes Siam-Lounge-Logo mit dem Schriftzug Thai & International Food Cuisines auf schwarzem Hintergrund.",
+      "th": "โลโก้ Siam Lounge สีทอง พร้อมข้อความ Thai & International Food Cuisines บนพื้นหลังสีดำ"
+    }
+  }
 }

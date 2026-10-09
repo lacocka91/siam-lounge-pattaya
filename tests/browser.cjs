@@ -43,7 +43,8 @@ function check(condition, message) { if (!condition) failures.push(message); }
     assert.equal(await page.locator('#events-grid .event-card').count(), 0);
     assert.equal(await page.locator('#event-archive').isHidden(), true);
     assert.equal(await page.locator('#menu-dishes').isHidden(), true);
-    assert.equal(await page.locator('#gallery-grid figure').count(), 17);
+    assert.equal(await page.locator('#gallery-grid figure').count(), 1);
+    assert.equal(await page.locator('.gallery-thumbnail').count(), 17);
     assert.equal(await page.locator('.quick-actions button').count(), 2);
     const structure = await page.evaluate(() => ({
       missingLabels: [...document.querySelectorAll('input, select, textarea')].filter(el => !el.labels.length).map(el => el.id),

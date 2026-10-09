@@ -233,11 +233,13 @@ Alle Originalbilder gehören unter `assets/images/`. Unterstützt sind lokale SV
 
 Die 17 kuratierten Originalfotos in `SIAM_DATA.gallery` decken `food`, `central`, `pratumnak`, `stay` und `events` ab. Acht davon ersetzen außerdem die Bildplatzhalter in Entdecken, Central, Pratumnak und den Unterkunftskarten. Vollständige Originaldateien-Zuordnung, Ausschlüsse und Aufbereitung: [Bilddokumentation](assets/images/README.md), technische Daten: [Bildmanifest](assets/images/manifest.json).
 
+Die Galerie zeigt ein großes, unbeschnittenes Hauptbild mit Links-/Rechts-Pfeilen und einer horizontalen Vorschauleiste. Die aktive Vorschau ist markiert. Wischen am Hauptbild wechselt auf Touch-Geräten das Foto; vertikales Scrollen und Zoomen bleiben möglich. Pfeiltasten sowie Pos1/Ende wechseln die Auswahl, Enter/Leertaste auf dem Hauptbild öffnen die bestehende Lightbox. Kategorien begrenzen die Auswahl; bei nur einem Foto sind die Pfeile deaktiviert. Der Sprachwechsel erhält die Auswahl. Ohne JavaScript bleibt das ursprüngliche Fotoraster sichtbar.
+
 1. Bei einem Eintrag `image` mit dem tatsächlichen relativen Bildpfad füllen.
 2. `alt` mit aussagekräftigen Beschreibungen in EN, DE und Thai ausfüllen.
 3. Bei Bedarf weitere Einträge mit eindeutiger `id` und passender `category` hinzufügen. Für responsive Bilder `thumbnail`, `width`, `height` und `sources: [{ image, width }]` ergänzen; `image` ist die große Lightbox-Version.
 
-Ohne Bild oder vollständige Beschreibung bleibt ein klar beschrifteter neutraler Platzhalter. Erst echte Bilder bekommen einen Vergrößerungsbutton und die Lightbox. Kategorien ohne Einträge werden ausgeblendet. Ein fehlgeschlagenes Bild lädt einen neutralen Fallback statt eines kaputten Bildsymbols.
+Die Galerie nimmt nur Einträge mit lokalem Bildpfad und vollständigen Beschreibungen in allen drei Sprachen auf. Kategorien ohne solche Einträge werden ausgeblendet. Bei einem Ladefehler erscheint ein Hinweis statt eines kaputten Bildsymbols; Pfeile und Vorschauen bleiben bedienbar.
 
 ### Hero, Standorte und Zimmerkarten
 
@@ -250,9 +252,9 @@ Die Bildfelder verwenden Originalfotos mit `srcset`, passenden Abmessungen und v
      data-i18n-alt="photo.centralOriginal">
 ```
 
-Das Beispiel erst einsetzen, nachdem die Datei existiert. Den neuen Schlüssel `photo.centralOriginal` in allen drei Sprachen ergänzen. Bei einem echten Bild keine alte Platzhalterbeschreibung übernehmen. Für den Hero ein geeignetes großes Foto in `.hero-art` einsetzen, den Bildhinweis erst dann entfernen und die Textkontraste sichern. Hero-Bilder nicht verzögert laden; Galerie-, Event- und Speisekartenbilder nutzen bereits Lazy Loading.
+Das Beispiel erst einsetzen, nachdem die Datei existiert. Den neuen Schlüssel `photo.centralOriginal` in allen drei Sprachen ergänzen. Bei einem echten Bild keine alte Platzhalterbeschreibung übernehmen. Der Hero verwendet das unveränderte Markenbild `476361896_8400298233404978_6082872404815159922_n.jpg` als `assets/images/siam-lounge-brand.jpg`: vollständig, im Original-Seitenverhältnis und auf schwarzem Hintergrund. Texte und Reservierungsbuttons stehen darunter. Das Hero-Bild lädt sofort mit hoher Priorität; Galerie-, Event- und Speisekartenbilder nutzen Lazy Loading.
 
-Die Unterkunftskarten zeigen echte Fotos von Zimmer, Wohnbereich und Badezimmer. Es sind keine Zimmerkategorien oder Angaben zur Zimmeranzahl; Ausstattung und Verfügbarkeit müssen weiterhin bestätigt werden. Textlogo und abstrakter Hero bleiben bis zu geeigneten Originaldateien bestehen.
+Die Unterkunftskarten zeigen echte Fotos von Zimmer, Wohnbereich und Badezimmer. Es sind keine Zimmerkategorien oder Angaben zur Zimmeranzahl; Ausstattung und Verfügbarkeit müssen weiterhin bestätigt werden. Das Textlogo in der Navigation bleibt erhalten.
 
 ## Sprachen und Bedienung
 

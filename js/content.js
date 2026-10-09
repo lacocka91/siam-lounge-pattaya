@@ -5,6 +5,9 @@
   const data = window.SIAM_DATA;
   let menuCategory = 'breakfast';
   let galleryCategory = 'all';
+  let galleryItems = [];
+  let galleryId = null;
+  let galleryView = null;
   let lightboxItem = null;
   const galleryKeys = { food: 'gallery.food', central: 'nav.central', pratumnak: 'nav.pratumnak', stay: 'nav.stay', events: 'gallery.events' };
   const art = { food: 'art-orbit food-art', central: 'art-arch central-art', pratumnak: 'art-orbit pratumnak-art', stay: 'art-steps stay-art', events: 'art-arch event-art' };
@@ -100,20 +103,140 @@
     image.addEventListener('error', () => content.replaceChildren(app.node('p', '', app.t('gallery.unavailable'))), { once: true });
     content.replaceChildren(image, app.node('p', 'lightbox-caption', app.localize(lightboxItem.alt)));
   }
+  function selectGallery(index, revealThumbnail = false) {
+    if (!galleryItems.length) return;
+    const item = galleryItems[(index + galleryItems.length) % galleryItems.length];
+    galleryId = item.id;
+    const { open, image, caption, position, thumbnails, previous, next } = galleryView;
+    open.dataset.galleryId = item.id;
+    open.setAttribute('aria-label', app.t('gallery.open') + ': ' + app.localize(item.alt));
+    image.alt = app.localize(item.alt);
+    image.width = item.width || 900; image.height = item.height || 650;
+    image.srcset = (item.sources || []).filter(source => app.localImage(source.image) && Number.isInteger(source.width) && source.width > 0).map(source => source.image + ' ' + source.width + 'w').join(', ');
+    image.src = app.localImage(item.image);
+    image.hidden = false; open.disabled = false;
+    caption.textContent = app.t(galleryKeys[item.category]);
+    position.textContent = app.t('gallery.position').replace('{current}', galleryItems.indexOf(item) + 1).replace('{total}', galleryItems.length);
+    previous.disabled = next.disabled = galleryItems.length < 2;
+    for (const button of thumbnails.children) {
+      const active = button.dataset.galleryThumb === galleryId;
+      button.setAttribute('aria-pressed', String(active));
+      button.tabIndex = active ? 0 : -1;
+      // Only scroll the preview strip, never move the page when changing photos.
+      if (active && revealThumbnail) {
+        const edge = button.getBoundingClientRect().left - thumbnails.getBoundingClientRect().left + thumbnails.scrollLeft;
+        if (edge < thumbnails.scrollLeft) thumbnails.scrollLeft = edge;
+        else if (edge + button.offsetWidth > thumbnails.scrollLeft + thumbnails.clientWidth) thumbnails.scrollLeft = edge + button.offsetWidth - thumbnails.clientWidth;
+      }
+    }
+  }
+  function moveGallery(step) {
+    selectGallery(galleryItems.findIndex(item => item.id === galleryId) + step, true);
+  }
+  function createGallery() {
+    const grid = document.querySelector('#gallery-grid');
+    grid.classList.add('gallery-viewer');
+    grid.setAttribute('role', 'group');
+    const stage = app.node('div', 'gallery-stage');
+    const figure = app.node('figure', 'gallery-main');
+    const open = app.node('button', 'gallery-open gallery-main-open');
+    open.type = 'button';
+    open.setAttribute('aria-haspopup', 'dialog');
+    open.setAttribute('aria-controls', 'lightbox-dialog');
+    const image = app.node('img', 'gallery-main-image');
+    image.id = 'gallery-main-image';
+    image.loading = 'lazy'; image.decoding = 'async'; image.draggable = false;
+    image.sizes = '(max-width: 420px) calc(100vw - 36px), (max-width: 760px) calc(100vw - 40px), (max-width: 1200px) calc(100vw - 200px), 1112px';
+    const zoom = app.node('span', 'gallery-zoom', '↗'); zoom.setAttribute('aria-hidden', 'true');
+    open.append(image, zoom);
+    const caption = app.node('figcaption', 'gallery-caption');
+    figure.append(open, caption);
+    const arrow = (className, symbol, step) => {
+      const button = app.node('button', 'gallery-arrow ' + className);
+      button.type = 'button'; button.setAttribute('aria-controls', image.id);
+      const icon = app.node('span', '', symbol); icon.setAttribute('aria-hidden', 'true');
+      button.append(icon); button.addEventListener('click', () => moveGallery(step));
+      return button;
+    };
+    const previous = arrow('gallery-previous', '←', -1);
+    const next = arrow('gallery-next', '→', 1);
+    const position = app.node('p', 'gallery-position');
+    position.setAttribute('role', 'status'); position.setAttribute('aria-atomic', 'true');
+    stage.append(previous, figure, next, position);
+    const thumbnails = app.node('div', 'gallery-thumbnails'); thumbnails.setAttribute('role', 'group');
+    grid.replaceChildren(stage, thumbnails);
+    galleryView = { grid, stage, open, image, caption, position, thumbnails, previous, next };
+    image.addEventListener('error', () => {
+      image.hidden = true; open.disabled = true;
+      caption.textContent = app.t('gallery.unavailable');
+    });
+    let gesture = null;
+    let suppressClick = false;
+    open.addEventListener('pointerdown', event => {
+      suppressClick = false;
+      if (!event.isPrimary) { gesture = null; return; }
+      if (!['touch', 'pen'].includes(event.pointerType)) return;
+      gesture = { id: event.pointerId, x: event.clientX, y: event.clientY };
+      open.setPointerCapture(event.pointerId);
+    });
+    open.addEventListener('pointercancel', () => { gesture = null; });
+    open.addEventListener('pointerup', event => {
+      if (!gesture || gesture.id !== event.pointerId) return;
+      const dx = event.clientX - gesture.x, dy = event.clientY - gesture.y;
+      gesture = null;
+      if (Math.abs(dx) >= 40 && Math.abs(dx) > Math.abs(dy) * 1.4) {
+        suppressClick = true;
+        if (galleryItems.length > 1) moveGallery(dx < 0 ? 1 : -1);
+      }
+    });
+    open.addEventListener('click', event => {
+      if (suppressClick && event.detail !== 0) { suppressClick = false; return; }
+      const item = galleryItems.find(entry => entry.id === galleryId);
+      if (!item) return;
+      lightboxItem = item; renderLightbox(); app.openDialog('lightbox-dialog', open);
+    });
+    thumbnails.addEventListener('click', event => {
+      const button = event.target.closest('[data-gallery-thumb]');
+      if (button) selectGallery(galleryItems.findIndex(item => item.id === button.dataset.galleryThumb), true);
+    });
+    grid.addEventListener('keydown', event => {
+      if (event.altKey || event.ctrlKey || event.metaKey || !['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+      event.preventDefault();
+      const index = galleryItems.findIndex(item => item.id === galleryId);
+      selectGallery(event.key === 'Home' ? 0 : event.key === 'End' ? galleryItems.length - 1 : index + (event.key === 'ArrowLeft' ? -1 : 1), true);
+      if (event.target.closest('[data-gallery-thumb]')) thumbnails.querySelector('[aria-pressed="true"]')?.focus({ preventScroll: true });
+    });
+  }
   function renderGallery() {
-    const gallery = data.gallery.filter(item => Object.hasOwn(galleryKeys, item.category));
+    const gallery = data.gallery.filter(item => Object.hasOwn(galleryKeys, item.category) && app.localImage(item.image) && translated(item.alt));
+    if (!galleryView) createGallery();
+    const { grid, stage, thumbnails, previous, next } = galleryView;
+    const focusedThumbnail = thumbnails.contains(document.activeElement);
     document.querySelectorAll('[data-gallery-filter]').forEach(button => {
       button.hidden = button.dataset.galleryFilter !== 'all' && !gallery.some(item => item.category === button.dataset.galleryFilter);
       button.setAttribute('aria-pressed', String(button.dataset.galleryFilter === galleryCategory));
     });
-    const grid = document.querySelector('#gallery-grid');
-    grid.replaceChildren();
-    gallery.filter(item => galleryCategory === 'all' || item.category === galleryCategory).forEach(item => {
-      const label = app.t(galleryKeys[item.category]);
-      const figure = app.node('figure', 'gallery-item');
-      figure.append(picture(item, item.category, label, true), app.node('figcaption', '', label));
-      grid.append(figure);
-    });
+    galleryItems = gallery.filter(item => galleryCategory === 'all' || item.category === galleryCategory);
+    grid.setAttribute('aria-label', app.t('gallery.viewer'));
+    thumbnails.setAttribute('aria-label', app.t('gallery.thumbnails'));
+    previous.setAttribute('aria-label', app.t('gallery.previous'));
+    next.setAttribute('aria-label', app.t('gallery.next'));
+    stage.hidden = !galleryItems.length;
+    thumbnails.replaceChildren(...galleryItems.map((item, index) => {
+      const button = app.node('button', 'gallery-thumbnail'); button.type = 'button';
+      button.dataset.galleryThumb = item.id;
+      button.setAttribute('aria-controls', 'gallery-main-image');
+      button.setAttribute('aria-label', app.t('gallery.select') + ' ' + (index + 1) + ': ' + app.localize(item.alt));
+      const image = app.node('img', '');
+      image.src = app.localImage(item.thumbnail) || app.localImage(item.image);
+      image.alt = app.localize(item.alt); image.width = item.width || 900; image.height = item.height || 650;
+      image.loading = 'lazy'; image.decoding = 'async'; image.draggable = false;
+      image.addEventListener('error', () => { image.hidden = true; button.textContent = String(index + 1); }, { once: true });
+      button.append(image);
+      return button;
+    }));
+    selectGallery(Math.max(0, galleryItems.findIndex(item => item.id === galleryId)), true);
+    if (focusedThumbnail) thumbnails.querySelector('[aria-pressed="true"]')?.focus({ preventScroll: true });
     renderLightbox();
   }
   document.querySelector('.gallery-filters').hidden = false;
